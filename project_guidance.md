@@ -34,8 +34,8 @@ To organize your code, you can use multiple JavaScript files (don't forget to ad
 
 The project process should look like:
 
-    -Planning: Write down your ideas (use diagrams!)
-    -Start by creating the frontend and backend directories
+    x-Planning: Write down your ideas (use diagrams!)
+    x-Start by creating the frontend and backend directories
     -Build the R from CRUD for just one model, vertically! That means one migration, one model, one controller action, one fetch   call, and one DOM update. Add seed data and confirm that your code works by testing it visually.
     -Then, build the next CRUD action (maybe Create or Update), again building vertically.
     -Continue building features one by one, (vertically!)
