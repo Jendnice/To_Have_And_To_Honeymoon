@@ -7,3 +7,6 @@
         origins 'localhost:/3000'
   - Do NOT include a backslash at the end of the address!
   Also update the resource '*', headers, and methods, to only reflect what you're using in your project.
+
+
+
