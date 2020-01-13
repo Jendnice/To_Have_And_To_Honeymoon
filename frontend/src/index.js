@@ -5,21 +5,7 @@ console.log("test now")
 //   .then(response => response.json())
 //   .then(parsedResponse => console.log(parsedResponse));
 
-
-fetch('http://[::1]:3000/locations')
-.then(resp => resp.json())
-.then(locations => {
-    console.log(locations)
+document.addEventListener("DOMContentLoaded", () => {
+    getLocations()
+    // Location.newLocationForm()
 })
-
-
-// fetch('http://[::1]:3000/locations')
-// .then(resp => resp.json())
-// .then(locations => {
-//     locations.forEach( location => {
-//         const { id, name, description, travel_season } = location
-//         new location(id, name, description, travel_season)
-//     })
-// })
-
- 
