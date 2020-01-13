@@ -16,7 +16,7 @@ To keep your code clean, you should use JavaScript classes
 To organize your code, you can use multiple JavaScript files (don't forget to add <script> tags for each one!)
 
 
-----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------
 
 
   You can visualize all the parts you of an app you need to build as a grid, with the features along the x axis (columns) and the different layers of the stack along the y axis.
