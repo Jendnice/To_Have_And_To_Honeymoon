@@ -6,16 +6,14 @@ console.log("test now")
 //   .then(parsedResponse => console.log(parsedResponse));
 
 
-fetch('http://localhost:3000/locations')
+fetch('http://[::1]:3000/locations')
 .then(resp => resp.json())
 .then(locations => {
-    locations.forEach( location => {
-        console.log(location)
-    })
+    console.log(locations)
 })
 
 
-// fetch('http://localhost:3000/locations')
+// fetch('http://[::1]:3000/locations')
 // .then(resp => resp.json())
 // .then(locations => {
 //     locations.forEach( location => {
