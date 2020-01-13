@@ -19,7 +19,7 @@ Current To-Do's:
   - Build the R from CRUD for just one model, vertically! That means one migration, one model, one controller action, one fetch   call, and one DOM update. Add seed data and confirm that your code works by testing it visually.
 
   Location:
-      - build migration for Location model
+      x- build migration for Location model
       - build out model for Location
       - build out Location controller - start with ONE controller action
       - build out Location routes - start with ONE route that matches controller action built
@@ -28,3 +28,14 @@ Current To-Do's:
       - seed data based on above and ensure everything works by testing it visually
 
       - go back to location controller and repeat for next controller action from there to end of list until Location is fully built
+
+
+      LOCATION INFO:
+      
+has_many :experiences
+
+name -- string 
+description -- string
+travel_season -- string
+
+
