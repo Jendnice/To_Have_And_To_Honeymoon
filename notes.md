@@ -26,10 +26,10 @@ Current To-Do's:
       x- build out Location routes - start with ONE route that matches controller action built
       x- build out fetch call - start with ONE that matches above
       x- seed data based on above x- ensure everything works by testing it visually
-      - render and format experience(s) onto page
-      - add beginning style(s) (?)
+      x- render and format location(s) onto page
+      x- add beginning style(s) (?)
       - build out DOM update - start with ONE DOM update that matches/correlates with above
-      - ensure everything works by testing it visually (again)
+      x- ensure everything works by testing it visually (again)
 
       - go back to location controller and repeat for next controller action from there to end of list until Location is fully built
       - (Remember to add experiences back in to Location Serializer once that resource is up and running in all parts)
