@@ -4,6 +4,9 @@ body {
 }
 
 h1{
+    font-family: "Brush Script MT", cursive;
+    font-size: 50px;
+    font-weight: 300;
     display: flex;
     flex-direction: column;
     justify-content: center;
