@@ -20,9 +20,10 @@ Current To-Do's:
 
   Location:
       x- build migration for Location model
-      - build out model for Location
-      - build out Location controller - start with ONE controller action
-      - build out Location routes - start with ONE route that matches controller action built
+      x- build out model for Location
+      x- build out Location controller - start with ONE controller action
+      x- build out/utilize serializer as part of controller action 
+      x- build out Location routes - start with ONE route that matches controller action built
       - build out fetch call - start with ONE that matches aboves
       - build out DOM update - start with ONE DOM update that matches/correlates with above
       - seed data based on above and ensure everything works by testing it visually
