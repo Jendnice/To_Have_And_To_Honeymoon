@@ -8,6 +8,10 @@ Rails.application.routes.draw do
 
   get '/locations', to: 'locations#index'
 
+  post '/locations', to: 'locations#create'
+
   # resources :locations, only: [:index, :show, :update, :create, :destroy]
 
 end
+
+
