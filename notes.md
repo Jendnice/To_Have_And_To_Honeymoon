@@ -24,9 +24,9 @@ Current To-Do's:
       x- build out Location controller - start with ONE controller action
       x- build out/utilize serializer as part of controller action 
       x- build out Location routes - start with ONE route that matches controller action built
-      - build out fetch call - start with ONE that matches aboves
+      x- build out fetch call - start with ONE that matches above
       - build out DOM update - start with ONE DOM update that matches/correlates with above
-      - seed data based on above and ensure everything works by testing it visually
+      x- seed data based on above - ensure everything works by testing it visually
 
       - go back to location controller and repeat for next controller action from there to end of list until Location is fully built
 
