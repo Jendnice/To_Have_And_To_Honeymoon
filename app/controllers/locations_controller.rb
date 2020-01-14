@@ -13,7 +13,8 @@ class LocationsController < ApplicationController
     def create 
         location = Location.create(location_params)
 
-        if new_location
+        # if new_location
+        if location
             render json: LocationSerializer.new(location)
         else 
             render json: { message: "Sorry! Could not create new location. Please try again." }
