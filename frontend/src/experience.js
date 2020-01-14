@@ -59,6 +59,7 @@ class Experience {
          const experienceCard = document.createElement('div')
 
          experienceCard.classList.add('experience-card')
+         experienceCard.classList.add("column")
          experienceCard.id = this.id
          experienceCard.innerHTML = `
             <h3>${this.name}</h2>

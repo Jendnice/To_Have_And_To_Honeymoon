@@ -14,5 +14,8 @@ location_b = Location.create(name: "Iceland", description: "Iceland awes with gl
 #   [#<Experience id: 1, name: "Falconry", description: "birds", region: "West Ireland", image_url: "www.image.com", location_id: 1, created_at: "2020-01-14 15:52:50", updated_at: "2020-01-14 15:52:50">]
 #   Belongs to Ireland location.
 
+#   [#<Experience id: 3, name: "Candamarra castle tour", description: "Experience the castles firsthand!", region: "West", image_url: "www.candamarracastle.example", location_id: 1, created_at: "2020-01-14 17:36:27", updated_at: "2020-01-14 17:36:27">]
+#   Belongs to Ireland location.
+
 #   [#<Experience id: 2, name: "Skagafoss Falls", description: "Be awed by the incredible waterfalls!", region: "South", image_url: "www.icelandwaterfalls.example", location_id: 2, created_at: "2020-01-14 17:23:26", updated_at: "2020-01-14 17:23:26">]
 #   Belongs to Iceland location.
