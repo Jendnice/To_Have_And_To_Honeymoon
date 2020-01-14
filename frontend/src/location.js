@@ -21,7 +21,15 @@ function eachLocation(json) {
         locationsData.forEach( location => {
                     const { id, name, description, travel_season } = location.attributes
                     new Location(id, name, description, travel_season)
-                })
+            })
+    }
+
+
+
+
+function clearLocationsHtml() {
+    let locationsIndex = document.getElementById("location-container")
+    locationsIndex.innerHTML = ''
     }
 
 
@@ -67,4 +75,36 @@ class Location {
   
     }
 
-  }
+
+    static newLocationForm(){
+        const newLocationForm = document.querySelector('.add-location-form');
+        newLocationForm.addEventListener("submit", function(event){
+        event.preventDefault()
+        let nameInput = this.name.value 
+        let descriptionInput = this.description.value 
+        let travel_seasonInput = this.travel_season.value 
+       
+        fetch("http://[::1]:3000/locations", {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            name: `${nameInput}`,
+            description: `${descriptionInput}`,
+            travel_season: `${travel_seasonInput}`
+          })
+        }).then(resp => resp.json())
+          .then(data => {
+            clearLocationsHtml()
+            getLocations()
+            Location.newLocationForm()
+         });
+      })
+      }
+
+
+}
+
+
+
