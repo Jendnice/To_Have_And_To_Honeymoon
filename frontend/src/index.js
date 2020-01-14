@@ -8,4 +8,20 @@ console.log("test now")
 document.addEventListener("DOMContentLoaded", () => {
     getLocations()
     // Location.newLocationForm()
+
+    document.getElementById('location-form').addEventListener('click', function(event) {
+
+       
+        if (event.target.type == "submit") {
+    
+            debugger 
+
+            // addLocation(event.target.parentElement)
+        }
+    })
+
 })
+
+
+
+
