@@ -60,7 +60,7 @@ travel_season -- string
 
       x- build out Experience controller - start with ONE controller action
       x- build out/utilize serializer as part of controller action 
-      - build out Experience routes - start with ONE route that matches controller action built
+      x- build out Experience routes - start with ONE route that matches controller action built
       - (Remember to add experiences back in to Location Serializer (and everywhere else relevant= model, etc.) once that resource is up and running in all parts)
 
       - build out fetch call - start with ONE that matches above

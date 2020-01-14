@@ -7,6 +7,7 @@ console.log("test now")
 
 document.addEventListener("DOMContentLoaded", () => {
     getLocations()
+    // getExperiences()
     Location.newLocationForm()
 
 })

@@ -4,6 +4,7 @@ function getLocations() {
     .then(resp => resp.json())
     .then(json => {
         eachLocation(json)
+        getExperiences()
     })
 }
 

@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   post '/locations', to: 'locations#create'
   delete '/locations/:id', to: 'locations#destroy'
 
+  get '/experiences', to: 'locations#experiences'
+
 
   # resources :experiences, only: [:index, :show, :update, :create, :destroy]
   # resources :locations, only: [:index, :show, :update, :create, :destroy]
