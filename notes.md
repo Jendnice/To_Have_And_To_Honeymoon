@@ -56,12 +56,12 @@ travel_season -- string
 
   Experience:
       x- build migration for Experience model
-      - build out model for Experience
-      - (Remember to add experiences back in to Location Serializer (and everywhere else relevant= model, etc.) once that resource is up and running in all parts)
+      x- build out model for Experience
 
-      - build out Experience controller - start with ONE controller action
-      - build out/utilize serializer as part of controller action 
+      x- build out Experience controller - start with ONE controller action
+      x- build out/utilize serializer as part of controller action 
       - build out Experience routes - start with ONE route that matches controller action built
+      - (Remember to add experiences back in to Location Serializer (and everywhere else relevant= model, etc.) once that resource is up and running in all parts)
 
       - build out fetch call - start with ONE that matches above
       - seed data based on above 

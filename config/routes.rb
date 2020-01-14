@@ -6,13 +6,14 @@ Rails.application.routes.draw do
   # get '/test', to: 'application#test'
 
   # resources :locations
+  # resources :experiences
 
   get '/locations', to: 'locations#index'
-
   post '/locations', to: 'locations#create'
-
   delete '/locations/:id', to: 'locations#destroy'
-  
+
+
+  # resources :experiences, only: [:index, :show, :update, :create, :destroy]
   # resources :locations, only: [:index, :show, :update, :create, :destroy]
 
 end
