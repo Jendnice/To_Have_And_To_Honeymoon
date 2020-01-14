@@ -31,6 +31,7 @@ Current To-Do's:
       xx- ensure everything works by testing it visually
       xx- render and format location(s) onto page
       x- add beginning style(s) (?)
+      - Update new form to have text areas instead of one input line
       x- build out DOM update - start with ONE DOM update that matches/correlates with above
       xx- ensure everything works by testing it visually (again)
 
@@ -47,5 +48,43 @@ has_many :experiences
 name -- string 
 description -- string
 travel_season -- string
+
+
+
+
+
+
+  Experience:
+      x- build migration for Experience model
+      - build out model for Experience
+      - (Remember to add experiences back in to Location Serializer (and everywhere else relevant= model, etc.) once that resource is up and running in all parts)
+
+      - build out Experience controller - start with ONE controller action
+      - build out/utilize serializer as part of controller action 
+      - build out Experience routes - start with ONE route that matches controller action built
+
+      - build out fetch call - start with ONE that matches above
+      - seed data based on above 
+      - ensure everything works by testing it visually
+      - render and format location(s) onto page
+      - add beginning style(s) (?)
+      - build out DOM update - start with ONE DOM update that matches/correlates with above
+      - ensure everything works by testing it visually (again)
+
+      - go back to experience controller and repeat for next controller action 
+      - From there, either continue repeating for the remaining CRUD actions until Experience is fully built OR
+      - repeat the steps with the remaining Location pieces 
+      
+
+
+      EXPERIENCE INFO:
+
+belongs_to :location
+
+(location_id -- integer/?)
+name -- string
+description -- text
+region -- string
+image_url -- string 
 
 
