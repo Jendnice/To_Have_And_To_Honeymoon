@@ -11,14 +11,7 @@ class LocationsController < ApplicationController
     # end
 
     def create 
-        # if new_location
-        #     render json: LocationSerializer.new(location)
-        # else 
-        #     render json: { message: "Sorry! Could not create new location. Please try again." }
-        # end 
         location = Location.create(location_params)
-
-        # render json: location, status: 200
 
         if new_location
             render json: LocationSerializer.new(location)
@@ -27,6 +20,22 @@ class LocationsController < ApplicationController
         end 
 
     end 
+
+    def destroy 
+        location = Location.find_by(id: params[:id])
+
+        if location
+            location.destroy
+        else
+            render json: { message: "That location could not be, well...located. Please try again!" }
+        end 
+    end 
+
+    # def destroy
+    #     location = Location.find_by(id: params[:id])
+    #     location.destroy
+    #     render json: location
+    # end
 
 
     private

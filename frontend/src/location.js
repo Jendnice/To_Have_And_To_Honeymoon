@@ -16,10 +16,12 @@ function getLocations() {
 
 
 function eachLocation(json) {
+
     let locationsData = json["data"] 
 
         locationsData.forEach( location => {
-                    const { id, name, description, travel_season } = location.attributes
+                    const id = location.id 
+                    const { name, description, travel_season } = location.attributes
                     new Location(id, name, description, travel_season)
             })
     }
@@ -46,6 +48,7 @@ class Location {
   
     delete(e){
         const id = e.target.dataset.id
+
         fetch(`http://[::1]:3000/locations/${id}`,{
             method: "DELETE",
             headers:{
@@ -59,7 +62,7 @@ class Location {
     renderLocation(){
       const locationContainer = document.getElementById('location-container')
       const locationCard = document.createElement('div')
-  
+
       locationCard.classList.add('location-card')
       locationCard.id = this.id
       locationCard.innerHTML = `
