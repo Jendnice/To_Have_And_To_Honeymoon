@@ -27,13 +27,14 @@ function eachExperience(json) {
             })
     }
 
+
 // function clearExperiencesHtml() {
 //     let experiencesIndex = document.getElementById(`${this.location_id}`)
 //     experiencesIndex.innerHTML = ''
 // }
 
 
-    
+
 class Experience {
     constructor(id, location_id, name, description, region, image_url){
         this.id = id
@@ -71,23 +72,29 @@ class Experience {
             <p>Description: ${this.description}</p>
             <p>Region: ${this.region}</p>
             <p>Image: ${this.image_url}</p>
-        `
+
+       `
         // Add button line below to above as the last line before back tick closure:
         // <button data-id="${this.id}" class="delete">Delete</button>
 
-      experienceContainer.appendChild(experienceCard)
+          experienceContainer.appendChild(experienceCard)
+
+    
         
     //   experienceCard.addEventListener('click', e => {
     //       if (e.target.className === 'delete') this.delete(e)
     //   })
 
-  
     }
 
+    
+
+
     // static newExperienceForm(){
+
     //     const newExperienceForm = document.querySelector('.add-experience-form');
     //     newExperienceForm.addEventListener("submit", function(event){
-    //     event.preventDefault()
+    //     event.preventDefault() 
     
     //     let nameInput = this.name.value 
     //     let descriptionInput = this.description.value 
@@ -109,9 +116,9 @@ class Experience {
     //       .then(data => {
     //         clearExperiencesHtml()
     //         getLocations()
-    //         Experience.newExperienceForm()
+    //         // Experience.newExperienceForm()
     //      });
-    //   })
+    //  })
     //   }
 
 
@@ -134,28 +141,6 @@ class Experience {
 //     "1"
 //     this.name
 //     "Falconry"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

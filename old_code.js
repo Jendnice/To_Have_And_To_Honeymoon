@@ -384,4 +384,43 @@ function formatLocationData(json) {
       
     return newLocation
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="form">
+          <h3>New Experience</h3>
+          <form id="experience-form-${this.id}" class="add-experience-form">
+            <input type="text" name="name" placeholder="name"/>
+            <br/>
+            <input type="text" name="description" placeholder="description"/>
+            <br/>
+            <input type="text" name="region" placeholder="region"/>
+            <br/>
+            <input type="text" name="image_url" placeholder="image url"/>
+            <br/>
+            <input type="submit" value="Submit"/>
+          </form>
+        </div>
     
+
+
+
+    locationContainer.addEventListener('submit', event => {
+        if (event.target.className === 'add-experience-form')
+
+          console.log(this)
+         debugger 
+
+        Experience.newExperienceForm() 
+    })

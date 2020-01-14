@@ -80,13 +80,6 @@ class Location {
   
     }
 
-    
-
-
-
-
-
-
 
     static newLocationForm(){
         const newLocationForm = document.querySelector('.add-location-form');
@@ -117,6 +110,3 @@ class Location {
 
 
 }
-
-
-
