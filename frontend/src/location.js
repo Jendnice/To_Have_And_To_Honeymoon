@@ -5,6 +5,7 @@ function getLocations() {
     .then(json => {
         eachLocation(json)
         getExperiences()
+        Experience.newExperienceForm()
     })
 }
 

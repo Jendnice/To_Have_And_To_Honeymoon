@@ -27,6 +27,11 @@ function eachExperience(json) {
             })
     }
 
+function clearExperiencesHtml() {
+    let experiencesIndex = document.getElementById(`${this.location_id}`)
+    experiencesIndex.innerHTML = ''
+}
+
 
     
 class Experience {
@@ -78,6 +83,37 @@ class Experience {
 
   
     }
+
+    static newExperienceForm(){
+        const newExperienceForm = document.querySelector('.add-experience-form');
+        newExperienceForm.addEventListener("submit", function(event){
+        event.preventDefault()
+    
+        let nameInput = this.name.value 
+        let descriptionInput = this.description.value 
+        let regionInput = this.region.value
+        let image_urlInput = this.image_url.value 
+       
+        fetch("http://[::1]:3000/experiences", {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            name: `${nameInput}`,
+            description: `${descriptionInput}`,
+            region: `${regionInput}`,
+            image_url: `${image_urlInput}`
+          })
+        }).then(resp => resp.json())
+          .then(data => {
+            clearExperiencesHtml()
+            getLocations()
+            Experience.newExperienceForm()
+         });
+      })
+      }
+
 
 }
 
