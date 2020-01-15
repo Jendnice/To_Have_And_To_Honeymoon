@@ -14,7 +14,7 @@
 
 
 
-Current To-Do's:
+To-Do's:
 
   - Build the R from CRUD for just one model, vertically! That means one migration, one model, one controller action, one fetch   call, and one DOM update. Add seed data and confirm that your code works by testing it visually.
 
@@ -22,23 +22,22 @@ Current To-Do's:
       x- build migration for Location model
       x- build out model for Location
 
-      xx- build out Location controller - start with ONE controller action
-      xx- build out/utilize serializer as part of controller action 
-      xx- build out Location routes - start with ONE route that matches controller action built
+      xxx- build out Location controller - start with ONE controller action
+      xxx- build out/utilize serializer as part of controller action 
+      xxx- build out Location routes - start with ONE route that matches controller action built
 
-      xx- build out fetch call - start with ONE that matches above
-      xx- seed data based on above 
-      xx- ensure everything works by testing it visually
-      xx- render and format location(s) onto page
-      x- add beginning style(s) (?)
-      - Update new form to have text areas instead of one input line
-      x- build out DOM update - start with ONE DOM update that matches/correlates with above
-      xx- ensure everything works by testing it visually (again)
+      xxx- build out fetch call - start with ONE that matches above
+      xxx- seed data based on above 
+      xxx- ensure everything works by testing it visually
+      xxx- render and format location(s) onto page
+      xxx- build out DOM update - start with ONE DOM update that matches/correlates with above
+      xxx- ensure everything works by testing it visually (again)
+      xxx- Render and format location(s) onto page
 
-      - go back to location controller and repeat for next controller action 
-      - From there, either continue repeating for the remaining CRUD actions until Location is fully built OR
-      - repeat the steps from the beginning for the experience resource (again, starting with index or show and building vertically)
-      - (Remember to add experiences back in to Location Serializer once that resource is up and running in all parts)
+      xx- go back to location controller and repeat for next controller action 
+      xx- From there, either continue repeating for the remaining CRUD actions until Location is fully built OR
+      xx- repeat the steps from the beginning for the experience resource (again, starting with index or show and building vertically)
+     
 
 
       LOCATION INFO:
@@ -58,22 +57,19 @@ travel_season -- string
       x- build migration for Experience model
       x- build out model for Experience
 
-      x- build out Experience controller - start with ONE controller action
-      x- build out/utilize serializer as part of controller action 
-      x- build out Experience routes - start with ONE route that matches controller action built
-      - (Remember to add experiences back in to Location Serializer (and everywhere else relevant= model, etc.) once that resource is up and running in all parts)
+      xx- build out Experience controller - start with ONE controller action
+      xx- build out/utilize serializer as part of controller action 
+      xx- build out Experience routes - start with ONE route that matches controller action built
+      
+      xx- build out fetch call - start with ONE that matches above
+      xx- seed data based on above 
+      xx- ensure everything works by testing it visually
+      xx- build out DOM update - start with ONE DOM update that matches/correlates with above
+      xx- ensure everything works by testing it visually (again)
 
-      - build out fetch call - start with ONE that matches above
-      - seed data based on above 
-      - ensure everything works by testing it visually
-      - render and format location(s) onto page
-      - add beginning style(s) (?)
-      - build out DOM update - start with ONE DOM update that matches/correlates with above
-      - ensure everything works by testing it visually (again)
-
-      - go back to experience controller and repeat for next controller action 
-      - From there, either continue repeating for the remaining CRUD actions until Experience is fully built OR
-      - repeat the steps with the remaining Location pieces 
+      xx- go back to experience controller and repeat for next controller action 
+      xx- From there, either continue repeating for the remaining CRUD actions until Experience is fully built OR
+      xx- repeat the steps with the remaining Location pieces 
       
 
 
@@ -89,9 +85,24 @@ image_url -- string
 
 
 
-** Move some of the "render new experience" pieces into experience.js. (At least some of it likely belongs there.)
-** CLEAN UP unnecessary and unused code (all js files, index.html file)
-** Back to list above and continue from there.
+
+Current To Do's:
+
 ** Images! Make sure urls work and update form, etc. to have it as an href(?). Should display photo.
-** Styling/formatting, etc.
+
+** Move some of the "render new experience" pieces into experience.js. (At least some of it likely belongs there.)
+
+** Styling/formatting, etc. (forms, text area, spacing, colors, fonts, etc.)
+
+** Update both new forms to have text areas instead of one input line
+
+** CLEAN UP unnecessary and unused code (all js files, index.html file)
+
+** Back to list above and continue from there.
+
+
+Currently:
+
+Location - create, read, delete
+Expereince - create, read 
 
