@@ -158,6 +158,7 @@ class Location {
       const newLocationForm = document.querySelector('.add-location-form');
       newLocationForm.addEventListener("submit", function(event){
       event.preventDefault()
+
       let nameInput = this.name.value 
       let descriptionInput = this.description.value 
       let travel_seasonInput = this.travel_season.value 
@@ -180,6 +181,7 @@ class Location {
        })
     })
   }
+
 
 
 }
