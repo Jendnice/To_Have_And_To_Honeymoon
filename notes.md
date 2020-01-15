@@ -90,6 +90,7 @@ image_url -- string
 
 ** Figure out a way to break up renderlocation() in location.js. Huge right now. Need to break it up into pieces. 
 ** At least some of it belongs in experience.js.
+** Update it so a Location can only be added if it has a name. (Right now, blank can be submitted.)
 ** CLEAN UP unnecessary and unused code (all js files, index.html file)
 ** Back to list above and continue from there.
 ** Images! Make sure urls work and update form, etc. to have it as an href(?). Should display photo.
