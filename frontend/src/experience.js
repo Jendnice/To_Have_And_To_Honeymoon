@@ -52,6 +52,7 @@ function getNewExperience() {
     })
     .then(resp => resp.json())
     .then(experience => {
+
          eachExperience(json)
          clearLocationsHtml()
          getLocations()
@@ -60,18 +61,18 @@ function getNewExperience() {
 }
 
 
-function renderExperienceFormFields(locationId) {
-    return `<label>Name: </label><br/>
-    <input type="text" id="experience_name"><br/>
-    <input type="hidden" id="experience_locationId" value="${locationId}">
-    <label>Description:   </label><br/>
-    <input type="text" id="experience_description"><br/> 
-    <label>Region:   </label><br/>
-    <input type="text" id="experience_region"><br/>  
-    <label>Image:   </label><br/>
-    <input type="text" id="experience_image_url"><br/>  
-    <input type="submit" value="Submit" `
-}
+// function renderExperienceFormFields(locationId) {
+//     return `<label>Name: </label><br/>
+//     <input type="text" id="experience_name"><br/>
+//     <input type="hidden" id="experience_locationId" value="${locationId}">
+//     <label>Description:   </label><br/>
+//     <input type="text" id="experience_description"><br/> 
+//     <label>Region:   </label><br/>
+//     <input type="text" id="experience_region"><br/>  
+//     <label>Image:   </label><br/>
+//     <input type="text" id="experience_image_url"><br/>  
+//     <input type="submit" value="Submit" `
+// }
 
 
 

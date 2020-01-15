@@ -86,17 +86,17 @@ class Location {
     // }
 
     
-renderNewExperienceForm(e){
-    const id = e.target.dataset.id
-    let locationId = id 
+// renderNewExperienceForm(e){
+//     const id = e.target.dataset.id
+//     let locationId = id 
     
-    let experienceForm = document.createElement('form')
+//     let experienceForm = document.createElement('form')
 
-    experienceForm.setAttribute("onsubmit", "getNewExperience(); return false;")
-    experienceForm.innerHtml = renderExperienceFormFields(locationId)
+//     experienceForm.setAttribute("onsubmit", "getNewExperience(); return false;")
+//     experienceForm.innerHtml = renderExperienceFormFields(locationId)
 
-    experienceHtml.appendChild(experienceForm)
-}
+//     experienceHtml.appendChild(experienceForm)
+// }
 
   
     renderLocation(){
@@ -117,11 +117,67 @@ renderNewExperienceForm(e){
           if (e.target.className === 'delete') {
           this.delete(e)
           } else {
+            //   maybe render function for below here to help break it up
              if (e.target.className === 'add-experience-btn') {
-                this.renderNewExperienceForm(e)
+                locationCard.innerHTML = `
+                <h2>${this.name}</h2>
+                <p>Description: ${this.description}</p>
+                <p>Travel Season: ${this.travel_season}</p>
+                <button data-id="${this.id}" class="delete">Delete</button>
+                
+                <form class="add-experience-form">
+                <label>Name: </label><br/>
+          <input type="text" id="experience_name"><br/>
+          <input type="hidden" id="experience_locationId" value="${this.id}">
+          <label>Description:   </label><br/>
+          <input type="text" id="experience_description"><br/> 
+          <label>Region:   </label><br/>
+          <input type="text" id="experience_region"><br/>  
+          <label>Image:   </label><br/>
+          <input type="text" id="experience_image_url"><br/>  
+          <input type="submit" class="submit" value="Submit"> 
+                </form>`
+            
+                const id = e.target.dataset.id
+                // let locationId = id 
+
+                const newExperienceForm = document.querySelector('.add-experience-form');
+                newExperienceForm.addEventListener("submit", function(event){
+                event.preventDefault()
+
+
+                let nameInput = this.experience_name.value 
+                let descriptionInput = this.experience_description.value 
+                let regionInput = this.experience_region.value
+                let imageUrlInput = this.experience_image_url.value
+                let experienceLocationId = this.experience_locationId.value
+               
+                fetch("http://[::1]:3000/experiences", {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json'
+                  },
+                  body: JSON.stringify({
+                    name: `${nameInput}`,
+                    description: `${descriptionInput}`,
+                    region: `${regionInput}`,
+                    image_url: `${imageUrlInput}`,
+                    location_id: `${experienceLocationId}`
+                  })
+                }).then(resp => resp.json())
+                  .then(data => {
+
+                    console.log(data)
+                    // clearLocationsHtml()
+                    // getLocations()
+                    // Location.newLocationForm()
+                 });
+              })
+              }
+            
              }
           }
-      })
+      )
   
     }
 
