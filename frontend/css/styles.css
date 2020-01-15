@@ -36,6 +36,12 @@ h1{
     text-align: center;
 }
 
+.image-url {
+  justify-self: center;
+  height: 12rem;
+  width: auto;
+}
+
 .experience-card{
     float: left;
     width:350px;

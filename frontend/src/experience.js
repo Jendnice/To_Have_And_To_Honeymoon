@@ -64,19 +64,6 @@ function getNewExperience() {
 }
 
 
-// function renderExperienceFormFields(locationId) {
-//     return `<label>Name: </label><br/>
-//     <input type="text" id="experience_name"><br/>
-//     <input type="hidden" id="experience_locationId" value="${locationId}">
-//     <label>Description:   </label><br/>
-//     <input type="text" id="experience_description"><br/> 
-//     <label>Region:   </label><br/>
-//     <input type="text" id="experience_region"><br/>  
-//     <label>Image:   </label><br/>
-//     <input type="text" id="experience_image_url"><br/>  
-//     <input type="submit" value="Submit" `
-// }
-
 
 
 
@@ -116,9 +103,10 @@ class Experience {
             <h3>${this.name}</h2>
             <p>Description: ${this.description}</p>
             <p>Region: ${this.region}</p>
-            <p>Image: ${this.image_url}</p>
+            <img src="${this.image_url}" class="image-url" />
 
-       `
+         `
+
         // Add button line below to above as the last line before back tick closure:
         // <button data-id="${this.id}" class="delete">Delete</button>
 
@@ -132,43 +120,12 @@ class Experience {
 
     }
 
+
     
-
-
-
-    // static newExperienceForm(){
-
-    //     const newExperienceForm = document.querySelector('.add-experience-form');
-    //     newExperienceForm.addEventListener("submit", function(event){
-    //     event.preventDefault() 
-    
-    //     let nameInput = this.name.value 
-    //     let descriptionInput = this.description.value 
-    //     let regionInput = this.region.value
-    //     let image_urlInput = this.image_url.value 
-       
-    //     fetch("http://[::1]:3000/experiences", {
-    //       method: 'POST',
-    //       headers: {
-    //         'Content-Type': 'application/json'
-    //       },
-    //       body: JSON.stringify({
-    //         name: `${nameInput}`,
-    //         description: `${descriptionInput}`,
-    //         region: `${regionInput}`,
-    //         image_url: `${image_urlInput}`
-    //       })
-    //     }).then(resp => resp.json())
-    //       .then(data => {
-    //         clearExperiencesHtml()
-    //         getLocations()
-    //         // Experience.newExperienceForm()
-    //      });
-    //  })
-    //   }
-
 
 }
+
+
 
 
 // this:
