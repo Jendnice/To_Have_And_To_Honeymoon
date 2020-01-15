@@ -88,8 +88,6 @@ region -- string
 image_url -- string 
 
 
-** Check to make sure "submit" a blank experience doesn't save it to database.
-** Confirm Delete location still works and add cascade in model (?) to ensure associated experiences are deleted too.
 ** Figure out a way to break up renderlocation() in location.js. Huge right now. Need to break it up into pieces. 
 ** At least some of it belongs in experience.js.
 ** CLEAN UP unnecessary and unused code (all js files, index.html file)
