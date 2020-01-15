@@ -29,6 +29,9 @@ function eachExperience(json) {
 
 
 // function clearExperiencesHtml() {
+
+//     // debugger 
+
 //     let experiencesIndex = document.getElementById(`${this.location_id}`)
 //     experiencesIndex.innerHTML = ''
 // }

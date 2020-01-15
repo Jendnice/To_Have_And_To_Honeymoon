@@ -39,6 +39,7 @@ function clearLocationsHtml() {
 
 
 
+
 class Location {
     constructor(id, name, description, travel_season){
         this.id = id
@@ -119,6 +120,8 @@ class Location {
           } else {
             //   maybe render function for below here to help break it up
              if (e.target.className === 'add-experience-btn') {
+            
+              //  getExperiences()
                 locationCard.innerHTML = `
                 <h2>${this.name}</h2>
                 <p>Description: ${this.description}</p>
@@ -135,17 +138,25 @@ class Location {
           <input type="text" id="experience_region"><br/>  
           <label>Image:   </label><br/>
           <input type="text" id="experience_image_url"><br/>  
-          <input type="submit" class="submit" value="Submit"> 
+          <input type="submit" class="submit" value="Submit">
+          <button data-id="back" class="back" >Back</button>
                 </form>`
-            
+
+
+
                 const id = e.target.dataset.id
                 // let locationId = id 
-
-                const newExperienceForm = document.querySelector('.add-experience-form');
+            
+                const newExperienceForm = document.querySelector('.add-experience-form')      
+            
                 newExperienceForm.addEventListener("submit", function(event){
                 event.preventDefault()
-
-
+            
+                if (!this.experience_name.value) {
+                  clearLocationsHtml()
+                  getLocations()
+                  Location.newLocationForm()
+                } else {
                 let nameInput = this.experience_name.value 
                 let descriptionInput = this.experience_description.value 
                 let regionInput = this.experience_region.value
@@ -166,27 +177,29 @@ class Location {
                   })
                 }).then(resp => resp.json())
                   .then(data => {
-
+            
                     console.log(data)
                     // clearLocationsHtml()
                     // getLocations()
                     // Location.newLocationForm()
-                 });
+                 })
+                }
               })
+            
+              newExperienceForm.addEventListener('click', e => {
+                if (e.target.className === 'back') {
+                  // getLocations()
+                console.log('this is back')
+                }
+              })
+            
               }
             
              }
-          }
-      )
-  
-    }
-
+            }
+            )
             
-
-    
-
-    
-    
+            }
 
 
 

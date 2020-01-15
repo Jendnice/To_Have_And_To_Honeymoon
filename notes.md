@@ -89,5 +89,6 @@ image_url -- string
 
 
 ** Update flow so that users can either still see the experience cards that are already there while they add a new one, or can go "back" to experiences being listed if they decide they don't want to add an experience. Or both! Right now, you get trapped if you click it.
-** Figure out a way to break up renderlocation() in location.js. Huge right now. Need to break it up into pieces. And some of it probably belongs in experience.js.
+** Figure out a way to break up renderlocation() in location.js. Huge right now. Need to break it up into pieces. 
+** At least some of it belongs in experience.js.
 

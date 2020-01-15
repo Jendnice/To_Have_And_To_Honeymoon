@@ -424,3 +424,146 @@ function formatLocationData(json) {
 
         Experience.newExperienceForm() 
     })
+
+
+
+
+
+
+
+
+
+
+    const id = e.target.dataset.id
+    // let locationId = id 
+
+    const newExperienceForm = document.querySelector('.add-experience-form');
+    
+
+// locationCard.addEventListener('click', e => {
+//   if (e.target.className === 'delete') {
+//   this.delete(e)
+//   } else {
+//     //   maybe render function for below here to help break it up
+//      if (e.target.className === 'add-experience-btn') {
+
+
+    newExperienceForm.addEventListener("submit", function(event){
+    event.preventDefault()
+
+
+    let nameInput = this.experience_name.value 
+    let descriptionInput = this.experience_description.value 
+    let regionInput = this.experience_region.value
+    let imageUrlInput = this.experience_image_url.value
+    let experienceLocationId = this.experience_locationId.value
+   
+    fetch("http://[::1]:3000/experiences", {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: `${nameInput}`,
+        description: `${descriptionInput}`,
+        region: `${regionInput}`,
+        image_url: `${imageUrlInput}`,
+        location_id: `${experienceLocationId}`
+      })
+    }).then(resp => resp.json())
+      .then(data => {
+
+        console.log(data)
+        // clearLocationsHtml()
+        // getLocations()
+        // Location.newLocationForm()
+     });
+  })
+
+  newExperienceForm.addEventListener('click', e => {
+    if (e.target.className === 'back') {
+    console.log('this is back')
+    }
+  })
+
+  }
+
+ }
+}
+)
+
+}
+
+
+
+
+
+
+
+
+
+            
+const id = e.target.dataset.id
+// let locationId = id 
+
+const newExperienceForm = document.querySelector('.add-experience-form');
+
+
+// locationCard.addEventListener('click', e => {
+//   if (e.target.className === 'delete') {
+//   this.delete(e)
+//   } else {
+//     //   maybe render function for below here to help break it up
+//      if (e.target.className === 'add-experience-btn') {
+
+
+newExperienceForm.addEventListener("click", event => {
+
+  if (event.target.className === 'submit')  {
+
+     event.preventDefault()
+
+     debugger 
+
+let nameInput = this.experience_name.value 
+let descriptionInput = this.experience_description.value 
+let regionInput = this.experience_region.value
+let imageUrlInput = this.experience_image_url.value
+let experienceLocationId = this.experience_locationId.value
+
+fetch("http://[::1]:3000/experiences", {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    name: `${nameInput}`,
+    description: `${descriptionInput}`,
+    region: `${regionInput}`,
+    image_url: `${imageUrlInput}`,
+    location_id: `${experienceLocationId}`
+  })
+}).then(resp => resp.json())
+  .then(data => {
+
+    console.log(data)
+    // clearLocationsHtml()
+    // getLocations()
+    // Location.newLocationForm()
+ });
+//   } else {
+//     if (event.targetClassName === 'back') {
+//       console.log('this is back')
+//     }
+}
+})
+
+
+}
+
+}
+}
+)
+
+}
+
