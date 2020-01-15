@@ -7,7 +7,7 @@ function getLocations() {
         getExperiences()
         // Experience.newExperienceForm()
     })
-}
+} 
 
 
     //     .then(locationsData => {
@@ -60,6 +60,44 @@ class Location {
             e.target.parentElement.remove()
         })
     }
+
+
+    // renderNewExperienceForm(e){
+    //     const id = e.target.dataset.id
+
+    //     let locationId = id 
+    //     let eventsHtml = this.parentElement
+    //     let eventsForm = document.createElement('form')
+    //     eventForm.setAttributes("onsubmit", "addExperience(); return false;")
+    //     eventForm.innerHtml = renderExperienceFormFields(locationId)
+    //     eventsHtml.appendChild(eventForm)
+    // }
+
+
+
+    // function renderNewEventForm() {
+    //     let dogId = this.getAttribute('id')
+    //     this.style.display = "none"
+    //     let eventsHtml = this.parentElement
+    //     let eventForm = document.createElement('form')
+    //     eventForm.setAttribute("onsubmit", "addEvent(); return false;")
+    //     eventForm.innerHTML = renderEventFormFields(dogId)
+    //     eventsHtml.appendChild(eventForm)
+    // }
+
+    
+renderNewExperienceForm(e){
+    const id = e.target.dataset.id
+    let locationId = id 
+    
+    let experienceForm = document.createElement('form')
+
+    experienceForm.setAttribute("onsubmit", "getNewExperience(); return false;")
+    experienceForm.innerHtml = renderExperienceFormFields(locationId)
+
+    experienceHtml.appendChild(experienceForm)
+}
+
   
     renderLocation(){
       const locationContainer = document.getElementById('location-container')
@@ -72,16 +110,27 @@ class Location {
           <p>Description: ${this.description}</p>
           <p>Travel Season: ${this.travel_season}</p>
           <button data-id="${this.id}" class="delete">Delete</button>
-      `
+          <button data-id="${this.id}" class="add-experience-btn">Add Experience</button>
+          `
       locationContainer.appendChild(locationCard)
       locationCard.addEventListener('click', e => {
-          if (e.target.className === 'delete') this.delete(e)
+          if (e.target.className === 'delete') {
+          this.delete(e)
+          } else {
+             if (e.target.className === 'add-experience-btn') {
+                this.renderNewExperienceForm(e)
+             }
+          }
       })
   
     }
 
+            
+
     
 
+    
+    
 
 
 

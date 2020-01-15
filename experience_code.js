@@ -7,7 +7,7 @@ function getExperiences() {
     })
 }
 
- 
+
     //     .then(experiencesData => {
     //         renderexperiencesHtml(experiencesData)
     //         addexperiencesClickListeners()
@@ -32,47 +32,6 @@ function eachExperience(json) {
 //     let experiencesIndex = document.getElementById(`${this.location_id}`)
 //     experiencesIndex.innerHTML = ''
 // }
-
-
-
-
-function getNewExperience() {     
-    const experience = {
-        name: document.getElementById('experience_name').value,
-        location_id: document.getElementById('experience_locationId').value,
-        description: document.getElementById('experience_description').value,
-        region: document.getElementById('experience_region').value,
-        image_url: document.getElementById('experience_image_url').value
-    }
-
-    fetch("http://[::1]:3000/experiences", {
-        method: 'POST',
-        body: JSON.stringify(event),
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
-    })
-    .then(resp => resp.json())
-    .then(experience => {
-         eachExperience(json)
-         clearLocationsHtml()
-         getLocations()
-         Location.newLocationForm()
-      });
-}
-
-
-function renderExperienceFormFields(locationId) {
-    return `<label>Name: </label><br/>
-    <input type="text" id="experience_name"><br/>
-    <input type="hidden" id="experience_locationId" value="${locationId}">
-    <label>Description:   </label><br/>
-    <input type="text" id="experience_description"><br/> 
-    <label>Region:   </label><br/>
-    <input type="text" id="experience_region"><br/>  
-    <label>Image:   </label><br/>
-    <input type="text" id="experience_image_url"><br/>  
-    <input type="submit" value="Submit" `
-}
-
 
 
 
@@ -129,7 +88,6 @@ class Experience {
     }
 
     
-
 
 
     // static newExperienceForm(){
