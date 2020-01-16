@@ -126,3 +126,13 @@ Northern lights:
 "https://images.unsplash.com/photo-1542586096-69051a9526a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
 
 
+
+Design:
+1. Add picture slideshow/carousel
+2. Update New Experience form
+3. Update New Location form
+4. Add other design pieces similar to your website (block quotes, etc.)
+5. Adjust fonts (especially main text)
+6. Adjust font color (espeically main text contrast with button and heading color)
+7. Update main heading - maybe icons, or make an image for hold here instead? Something to spice it up.
+8. Add footer at bottom and update info to hold copyright, title, etc. (Look at previous project.)
