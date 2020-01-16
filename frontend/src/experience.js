@@ -103,7 +103,7 @@ class Experience {
             <h3>${this.name}</h2>
             <p>Description: ${this.description}</p>
             <p>Region: ${this.region}</p>
-            <img src="${this.image_url}" class="image-url" />
+            <img src="${this.image_url}" class="image-url"/>
 
          `
 

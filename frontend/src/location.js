@@ -135,11 +135,13 @@ class Location {
     locationCard.id = this.id
     locationCard.innerHTML = `
       <h2>${this.name}</h2>
-      <p>Description: ${this.description}</p>
-      <p>Travel Season: ${this.travel_season}</p>
-      <footer>
-      <button data-id="${this.id}" class="delete">Delete</button>
-      <button data-id="${this.id}" class="add-experience-btn">Add Experience</button>
+      <p><b>Description:</b> <i>${this.description}</i></p>
+      <p><b>Travel Season:</b> <i> ${this.travel_season}<i></p>
+      <footer class="footer">
+      <button data-id="${this.id}" class="delete">Delete Location</button>
+      <button data-id="${this.id}" class="add-experience-btn">|&nbsp; Add Experience</button>
+      </br>
+      </br>
       </footer>
       `
     locationContainer.appendChild(locationCard)

@@ -88,17 +88,19 @@ image_url -- string
 
 Current To Do's:
 
-** Images! Make sure urls work and update form, etc. to have it as an href(?). Should display photo.
+** Styling/formatting, etc. (forms, text area, spacing, colors, fonts, etc.)
 
 ** Move some of the "render new experience" pieces into experience.js. (At least some of it likely belongs there.)
 
-** Styling/formatting, etc. (forms, text area, spacing, colors, fonts, etc.)
+** Update both new forms to have text areas instead of one input line (?)
 
-** Update both new forms to have text areas instead of one input line
+** Look at project specs and check everything. (JSON ES6 for fetch, etc.)
+
+** Back to list above and continue from there.
 
 ** CLEAN UP unnecessary and unused code (all js files, index.html file)
 
-** Back to list above and continue from there.
+** ReadMe, blog, video, etc.
 
 
 Currently:
