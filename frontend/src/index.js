@@ -8,7 +8,10 @@ console.log("test now")
 document.addEventListener("DOMContentLoaded", () => {
     getLocations()
     Location.newLocationForm()
+    // Not currently using below:
     // showSlides()
+  
+    // Code below is for slideshow that works:
     showAutomaticSlides()
 
 })

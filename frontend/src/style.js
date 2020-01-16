@@ -1,4 +1,12 @@
+//        FIRST LINE BELOW IS PART OF CURRENT SLIDESHOW THAT WORKS 
+
 let slideIndex = 0;
+
+
+
+
+//    ---------- Code for click through slideshow - not currently using --------
+
 // showSlides();
 
 // // Next/previous controls
@@ -33,6 +41,13 @@ let slideIndex = 0;
 //     dots[slideIndex-1].className += " active";
 //   }
 
+//  -------------  End of clickthrough slideshow code -----------------------
+
+
+
+
+//            CURRENT SLIDESHOW CODE THAT WORKS:  
+
 function showAutomaticSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -44,3 +59,8 @@ function showAutomaticSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showAutomaticSlides, 3500); // Change image every 3.5 seconds
 }
+
+//      END OF CURRENT SLIDESHOW CODE THAT WORKS
+
+// -------------------------------------------------------------------------
+
