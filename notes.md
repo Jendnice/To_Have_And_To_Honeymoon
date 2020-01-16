@@ -92,11 +92,17 @@ Current To Do's:
 
 ** Move some of the "render new experience" pieces into experience.js. (At least some of it likely belongs there.)
 
+** Add DOM color change for when button/submit/delete/add experience are pointed at by mouse. (Not clicked, but mouse scroll. See prev. lab for examples.)
+
 ** Update both new forms to have text areas instead of one input line (?)
 
 ** Look at project specs and check everything. (JSON ES6 for fetch, etc.)
 
 ** Back to list above and continue from there.
+
+** Maybe add alphabetize/sort to locations. Could maybe do this through serializer when Location.all is called?
+
+** Delete style.js file, and where it's linked into bottom of index.html, if you're not using it. 
 
 ** CLEAN UP unnecessary and unused code (all js files, index.html file)
 
@@ -136,3 +142,34 @@ Design:
 6. Adjust font color (espeically main text contrast with button and heading color)
 7. Update main heading - maybe icons, or make an image for hold here instead? Something to spice it up.
 8. Add footer at bottom and update info to hold copyright, title, etc. (Look at previous project.)
+
+
+
+Slideshow image addresses:
+
+Original image addresses:
+
+https://cdn.wallpapersafari.com/72/53/kDQegb.jpg
+
+http://4.bp.blogspot.com/-gjLlC6VkDdI/UUhvK0P16sI/AAAAAAAAjYU/lvQxbRjwsmM/s1600/Travel++HD+wallpapers+(13).jpg
+
+https://b.kisscc0.com/20180517/vhe/kisscc0-ultra-high-definition-television-4k-resolution-des-travel-5afd944adf4c84.6317828715265680109147.jpg
+
+(one from Momentum background)
+
+http://2.bp.blogspot.com/-D0W02d8rpwU/UUhvMJ8AriI/AAAAAAAAjYc/s-zQHKhlrtQ/s1600/Travel++HD+wallpapers+(10).jpg
+
+
+Addresses once input into pastepic:
+
+"https://www.pastepic.xyz/images/2020/01/16/TravelHDwallpapers130700d7a5c9a5154e.jpg"
+
+"https://www.pastepic.xyz/images/2020/01/16/kisscc0-ultra-high-definition-television-4k-resolution-des-travel-5afd944adf4c84.63178287152656801091471f2ce3efd2742bbd.jpg" 
+
+"https://www.pastepic.xyz/images/2020/01/16/kDQegb79211a663b33ad4c.jpg" 
+
+"https://farm4.staticflickr.com/3927/33620928972_4f03e1f608_k.jpg"
+
+"https://www.pastepic.xyz/images/2020/01/16/TravelHDwallpapers10e035eda46eb87650.jpg"
+
+

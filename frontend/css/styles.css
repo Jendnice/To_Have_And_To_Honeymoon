@@ -46,8 +46,6 @@ h3{
 #container {
     width:1279px;
     margin:auto;
-    /* margin: center; */
-    margin-top:900px;
 }
 
 .footer {
@@ -69,12 +67,7 @@ h3{
 .add-experience-btn{
   font-size: 25px;
   float: center;
-  /* margin-left: 15px; */
-  /* margin-right: 25px; */
   border-style: none;
-  /* border-radius: 5px; */
-  /* border-color: #35353C; */
-  /* background-color: #88A176; */
   background-color:  #92B7C7;
   font-family: "Brush Script MT", cursive;
 }
@@ -82,12 +75,7 @@ h3{
 .delete{
   font-size: 25px;
   float: center;
-  /* margin-left: 10px; */
-  /* margin-right: 15px; */
   border-style: none;
-  /* border-radius: 5px; */
-  /* border-color: #35353C; */
-  /* background-color: #88A176; */
   background-color:  #92B7C7;
   font-family: "Brush Script MT", cursive;
 }
@@ -169,14 +157,6 @@ h3{
     clear: both;
   }
   
-  /* Style the counter cards */
-  /* .experience-card{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-    /* padding: 16px;
-    text-align: center; */
-    /* background-color: #f1f1f1; */
-  /* }  */
-  
   /* Responsive columns - one column layout (vertical) on small screens */
   @media screen and (max-width: 600px) {
     .column {
@@ -187,101 +167,102 @@ h3{
   }
 
 
+/*  Full-width click through slideshow: */
 
-
-/*           Below is for slideshow            */
-
-  
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  /* max-width: 1000px;
-  position: relative;
-  margin-left: 150px; */
-  position: relative;
-  width: 100vw; 
-  /* max-width: 800px; Maximum width */
-  margin: 0 auto; /* Center it */
-}
-
-/* Hide the images by default */
-.mySlides {
-  /* position: relative;
-  float: center;
-  max-width: 750px;
-  margin-left: 300px;  */
-   /* display: none; */
-
-  /* position: relative;
-  max-width: 800px; /* Maximum width */
-  /* margin: 0 auto; Center it */ 
-  /* width: 300vw;  */
-  float: left;
-  position: relative;
-  width: 100vw; 
-  margin: 0 auto;
-}
-
-
-/* .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-} */
-
-/* Next & previous buttons */
-/* .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-} */
-
-/* Position the "next button" to the right */
-/* .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-} */
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */ 
-/* Not currently being used (captions on slideshow iamges) */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
+html, body {
+  height: 100%; 
   width: 100%;
+  margin: 0;
+  padding: 0;
+}
+  
+.wrap {
+  height: 75%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: #120103;
+  color: #fff;
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
-/* Not currently being used (numbers on slideshow iamges) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
+.footer_class {
+  background: #3e474f;
+  box-shadow: 0 0.5em 1em #111;
   position: absolute;
-  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 900;
+  width: 100%;
 }
 
-/* The dots/bullets/indicators */
-/* Not currently being used (dots below slideshow iamges) */
+.footer_class label {
+  color: #788188;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 3em;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0 1em;
+}
+
+.footer_class label:hover {
+  background: #2e353b;
+}
+
+.slide {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  padding: 8em 1em 0;
+  background-color: #120103;
+  background-position: 50% 50%;
+  background-size: cover;
+  transition: left 0s 0.75s;
+}
+
+.slide-one {
+  background-image: url(https://www.pastepic.xyz/images/2020/01/16/kDQegb79211a663b33ad4c.jpg);
+}
+
+.slide-two {
+  background-image: url(https://www.pastepic.xyz/images/2020/01/16/TravelHDwallpapers130700d7a5c9a5154e.jpg);
+} 
+
+.slide-three {
+  background-image: url(https://www.pastepic.xyz/images/2020/01/16/kisscc0-ultra-high-definition-television-4k-resolution-des-travel-5afd944adf4c84.63178287152656801091471f2ce3efd2742bbd.jpg);
+}
+
+.slide-four {
+  background-image: url(https://farm4.staticflickr.com/3927/33620928972_4f03e1f608_k.jpg);
+}
+
+.slide-five {
+  background-image: url(https://www.pastepic.xyz/images/2020/01/16/TravelHDwallpapers10e035eda46eb87650.jpg);
+}
+
+[id^="slide"]:checked + .slide {
+  left: 0;
+  z-index: 100;
+  transition: left 0.65s ease-out;
+}
+
+.slide h4 {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.5s 0.5s, opacity 0.5s;
+}
+
+[id^="slide"]:checked + .slide h4 {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.5s 0.5s;
+}
+
+
 .dot {
   cursor: pointer;
   height: 15px;
@@ -291,38 +272,4 @@ h3{
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-}
-
-/* Not currently being used, it's for the dots */
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-} 
-
-
-.mySlides .content {
-  position: absolute; /* Position the background text */
-  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: #f1f1f1; /* Grey text */
-  width: 100%; /* Full width */
-  padding: 20px; /* Some padding */
 }

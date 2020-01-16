@@ -1,13 +1,13 @@
 //        FIRST LINE BELOW IS PART OF CURRENT SLIDESHOW THAT WORKS 
 
-let slideIndex = 0;
+// let slideIndex = 0;
 
 
 
 
 //    ---------- Code for click through slideshow - not currently using --------
 
-// showSlides();
+// showSlides()   ---------> needs to be added to index.js if using
 
 // // Next/previous controls
 // function plusSlides(n) {
@@ -48,17 +48,19 @@ let slideIndex = 0;
 
 //            CURRENT SLIDESHOW CODE THAT WORKS:  
 
-function showAutomaticSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showAutomaticSlides, 3500); // Change image every 3.5 seconds
-}
+//  showAutomaticSlides()  ---->  needs to be added to index.js if using
+
+// function showAutomaticSlides() {
+//   let i;
+//   let slides = document.getElementsByClassName("mySlides");
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+//   }
+//   slideIndex++;
+//   if (slideIndex > slides.length) {slideIndex = 1}
+//   slides[slideIndex-1].style.display = "block";
+//   setTimeout(showAutomaticSlides, 3500); // Change image every 3.5 seconds
+// }
 
 //      END OF CURRENT SLIDESHOW CODE THAT WORKS
 
