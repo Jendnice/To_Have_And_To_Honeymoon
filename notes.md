@@ -104,6 +104,8 @@ Current To Do's:
 
 ** Delete style.js file, and where it's linked into bottom of index.html, if you're not using it. 
 
+** Check images and make sure they're still working! (Images might expire after a week, so Thursday 01/23.) If so, grab the links further down and re-do them.
+
 ** CLEAN UP unnecessary and unused code (all js files, index.html file)
 
 ** ReadMe, blog, video, etc.
@@ -134,8 +136,6 @@ Northern lights:
 
 
 Design:
-1. 
-  a. Add quotes to slideshow and format them
 1. 
   b. Update background color if/as needed
 2. Update New Experience form
