@@ -137,8 +137,10 @@ class Location {
       <h2>${this.name}</h2>
       <p>Description: ${this.description}</p>
       <p>Travel Season: ${this.travel_season}</p>
+      <footer>
       <button data-id="${this.id}" class="delete">Delete</button>
       <button data-id="${this.id}" class="add-experience-btn">Add Experience</button>
+      </footer>
       `
     locationContainer.appendChild(locationCard)
     locationCard.addEventListener('click', e => {
