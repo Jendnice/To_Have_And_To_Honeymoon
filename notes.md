@@ -136,8 +136,7 @@ Northern lights:
 
 
 Design:
-1. 
-  b. Update background color if/as needed
+1. Update location card color and maybe experience card color (maybe work in dark green of font or grey of slideshow scroll)
 2. Update New Experience form
 3. Update New Location form
 4. Add other design pieces similar to your website (block quotes, etc.)
