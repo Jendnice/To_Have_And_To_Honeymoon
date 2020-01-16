@@ -134,12 +134,15 @@ Northern lights:
 
 
 Design:
-1. Add picture slideshow/carousel
+1. 
+  a. Add quotes to slideshow and format them
+1. 
+  b. Update background color if/as needed
 2. Update New Experience form
 3. Update New Location form
 4. Add other design pieces similar to your website (block quotes, etc.)
 5. Adjust fonts (especially main text)
-6. Adjust font color (espeically main text contrast with button and heading color)
+6. Adjust font color (especially main text contrast with button and heading color)
 7. Update main heading - maybe icons, or make an image for hold here instead? Something to spice it up.
 8. Add footer at bottom and update info to hold copyright, title, etc. (Look at previous project.)
 
