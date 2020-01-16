@@ -88,15 +88,20 @@ image_url -- string
 
 Current To Do's:
 
-** Styling/formatting, etc. (forms, text area, spacing, colors, fonts, etc.)
+** Styling/formatting, etc. (forms, text area, spacing, colors, fonts, etc.) See list!
+
+
+Pick up here:
+
+** Get ready for Corinna - questions, etc.
 
 ** Move some of the "render new experience" pieces into experience.js. (At least some of it likely belongs there.)
 
 ** Add DOM color change for when button/submit/delete/add experience are pointed at by mouse. (Not clicked, but mouse scroll. See prev. lab for examples.)
 
-** Update both new forms to have text areas instead of one input line (?)
-
 ** Look at project specs and check everything. (JSON ES6 for fetch, etc.)
+
+** Back to styling point above.
 
 ** Back to list above and continue from there.
 
@@ -137,12 +142,12 @@ Northern lights:
 
 Design:
 1. Update location card color and maybe experience card color (maybe work in dark green of font or grey of slideshow scroll)
-2. Update New Experience form
-3. Update New Location form
-4. Add other design pieces similar to your website (block quotes, etc.)
+2. Maybe move New Experience form ? Could try under body and see if that helps with spacing?
+3. Update New Location form to match New Experience form
+4. Figure out bottom spacing issue! 
 5. Adjust fonts (especially main text)
 6. Adjust font color (especially main text contrast with button and heading color)
-7. Update main heading - maybe icons, or make an image for hold here instead? Something to spice it up.
+7. Add other design pieces similar to your website (block quotes, etc.)
 8. Add footer at bottom and update info to hold copyright, title, etc. (Look at previous project.)
 
 
