@@ -145,11 +145,7 @@ Addresses once input into pastepic:
 
 Current To Do's:
 
-** Clean up code:
-        1. Break out long functions into smaller ones. (forms, etc.)
-        2. Move some of the "render new experience" pieces into experience.js.
-
-** Look up what functions should be under classes and what shouldn't and update Location and Experience functions as needed.
+** Look up what functions should be under classes and what shouldn't. Maybe they should all be since we're supposed to do class instead of functional?. Look at project specs, look online, and update Location and Experience functions as needed.
 
 ** Styling/formatting, etc. (forms, text area, spacing, colors, fonts, etc.) See list!
       Design:
