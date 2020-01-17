@@ -16,8 +16,6 @@
 
 To-Do's:
 
-  - Build the R from CRUD for just one model, vertically! That means one migration, one model, one controller action, one fetch   call, and one DOM update. Add seed data and confirm that your code works by testing it visually.
-
   Location:
       x- build migration for Location model
       x- build out model for Location
@@ -86,40 +84,10 @@ image_url -- string
 
 
 
-Current To Do's:
+Current CRUD actions:
 
-** Styling/formatting, etc. (forms, text area, spacing, colors, fonts, etc.) See list!
-
-
-Pick up here:
-
-** Get ready for Corinna - questions, etc.
-
-** Move some of the "render new experience" pieces into experience.js. (At least some of it likely belongs there.)
-
-** Add DOM color change for when button/submit/delete/add experience are pointed at by mouse. (Not clicked, but mouse scroll. See prev. lab for examples.)
-
-** Look at project specs and check everything. (JSON ES6 for fetch, etc.)
-
-** Back to styling point above.
-
-** Back to list above and continue from there.
-
-** Maybe add alphabetize/sort to locations. Could maybe do this through serializer when Location.all is called?
-
-** Delete style.js file, and where it's linked into bottom of index.html, if you're not using it. 
-
-** Check images and make sure they're still working! (Images might expire after a week, so Thursday 01/23.) If so, grab the links further down and re-do them.
-
-** CLEAN UP unnecessary and unused code (all js files, index.html file)
-
-** ReadMe, blog, video, etc.
-
-
-Currently:
-
-Location - create, read, delete
-Expereince - create, read 
+  Location - create, read, delete
+  Experience - create, read 
 
 
 
@@ -138,17 +106,6 @@ Wine tour:
 Northern lights:
 "https://images.unsplash.com/photo-1542586096-69051a9526a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
 
-
-
-Design:
-1. Update location card color and maybe experience card color (maybe work in dark green of font or grey of slideshow scroll)
-2. Maybe move New Experience form ? Could try under body and see if that helps with spacing?
-3. Update New Location form to match New Experience form
-4. Figure out bottom spacing issue! 
-5. Adjust fonts (especially main text)
-6. Adjust font color (especially main text contrast with button and heading color)
-7. Add other design pieces similar to your website (block quotes, etc.)
-8. Add footer at bottom and update info to hold copyright, title, etc. (Look at previous project.)
 
 
 
@@ -180,3 +137,61 @@ Addresses once input into pastepic:
 "https://www.pastepic.xyz/images/2020/01/16/TravelHDwallpapers10e035eda46eb87650.jpg"
 
 
+
+
+
+
+
+
+Current To Do's:
+
+** Clean up code:
+        1. Break out long functions into smaller ones. (forms, etc.)
+        2. Move some of the "render new experience" pieces into experience.js.
+
+** Styling/formatting, etc. (forms, text area, spacing, colors, fonts, etc.) See list!
+      Design:
+          1. Update New Location form to match New Experience form
+          2. Maybe move New Experience form ? Could try under body and see if that helps with spacing?
+          3. Update location card color and maybe experience card color (maybe work in dark green of font or grey of slideshow scroll)
+          4. Adjust font type (especially main text)
+          5. Adjust font color (especially main text contrast with button and heading color)
+          6. Figure out how to make location card size readjust for more than 3 cards (?)
+          6. --Bonus:-- Add other design pieces similar to your website (block quotes, etc.)
+          7. --Bonus:-- Figure out bottom spacing issue! (Maybe move slideshow in between header and body instead of in body?) As part of this, maybe add footer at bottom and update info to hold copyright, title, etc. (Look at previous project.)
+
+** --Bonus-- Add DOM color change for when button/submit/delete/add experience are pointed at by mouse. (Not clicked, but mouse scroll. See prev. lab for examples.)
+
+** --Bonus-- Add in additional CRUD actions for resources. (Update for Location; Update and/or Delete for Experience.) If you do this, go back to main list above and repeat steps as needed to implement new action.
+
+** --Bonus-- Maybe add alphabetize/sort to locations. Could maybe do this through serializer when Location.all is called?
+
+** Look at project specs and check everything. (JSON ES6 for fetch, etc.)
+
+
+ONCE ABOVE ALL SET:
+
+** CLEAN UP unnecessary and unused code (all js files, index.html file)
+          1. Delete style.js file, and where it's linked into bottom of index.html, if you're not using it. 
+          2. Check images and make sure they're still working! (Images might expire after a week, so Thursday 01/23.) If so, grab the links in this file and re-do them.
+          3. Save code you want to keep elsewhere (notes, project_guidance, etc.), and delete those files.
+
+** ReadMe, blog, video, etc. - see project page. 
+          1. Additional blog due asap, as well.
+
+** Submit project
+
+** Schedule PR review. (And crush it!) :)
+
+
+Once project submitted and review scheduled:
+
+** Prepare for project review.
+    1. Review everything on project page list.
+    2. Review everything Corinna told you (in mini notebook).
+    3. Know every line of code - what it does and how it works. (HTML and CSS, too! Make sure you understand your slideshow pieces.)
+    4. Read article Corinna sent you (in your Slack.)
+    5. If you didn't add Update to Location and/or Experience, or Delete to Experience, make sure you know how to do these!
+    5. Watch ES6 video by Cernan.
+    6. Watch Rails API, debugging, and any others.
+    7. Watch at least the 3.5 hours Udemy video. (Maybe the whole course?)
