@@ -18,6 +18,85 @@ function eachExperience(json) {
 }
 
 
+function renderNewExperienceForm(locationCard, current) {
+    locationCard.innerHTML = `
+      <h2>${current.name}</h2>
+      <p>Description: ${current.description}</p>
+      <p>Travel Season: ${current.travel_season}</p>
+      <button data-id="${current.id}" class="delete">Delete</button>
+              
+        <form class="add-experience-form">
+        <label>Name: </label><br/>
+        <input type="text" id="experience_name"><br/>
+        <input type="hidden" id="experience_locationId" value="${current.id}">
+        <label>Description:   </label><br/>
+        <input type="text" id="experience_description"><br/> 
+        <label>Region:   </label><br/>
+        <input type="text" id="experience_region"><br/>  
+        <label>Image:   </label><br/>
+        <input type="text" id="experience_image_url"><br/>  
+        <input type="submit" class="submit" value="Submit">
+        <button data-id="back" class="back" >Back</button>
+        </form>`
+  
+    addListenersToNewForm()
+}
+  
+    
+function addListenersToNewForm() {
+    const newExperienceForm = document.querySelector('.add-experience-form')
+  
+    newExperienceForm.addEventListener("submit", function(event){
+    event.preventDefault()
+      if (!this.experience_name.value) {
+        clearLocationsHtml()
+        getLocations()
+        Location.newLocationForm()
+      } else {
+          let newExperienceInfo = this 
+          renderNewExperienceInfo(newExperienceInfo)
+        }
+      })
+  
+    newExperienceForm.addEventListener('click', e => {
+        if (e.target.className === 'back') {
+  
+        console.log('this is back')
+        // remove above console log when done 
+        }
+    })
+}
+  
+  
+function renderNewExperienceInfo(newExperienceInfo) {
+  
+    let nameInput = newExperienceInfo.experience_name.value 
+    let descriptionInput = newExperienceInfo.experience_description.value 
+    let regionInput = newExperienceInfo.experience_region.value
+    let imageUrlInput = newExperienceInfo.experience_image_url.value
+    let experienceLocationId = newExperienceInfo.experience_locationId.value
+             
+    fetch("http://[::1]:3000/experiences", {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+          },
+      body: JSON.stringify({
+          name: `${nameInput}`,
+          description: `${descriptionInput}`,
+          region: `${regionInput}`,
+          image_url: `${imageUrlInput}`,
+          location_id: `${experienceLocationId}`
+          })
+        }).then(resp => resp.json())
+          .then(data => {
+            // console.log(data)
+  
+          // remove above console log when done 
+        })
+}
+   
+
 
 class Experience {
     constructor(id, location_id, name, description, region, image_url){
