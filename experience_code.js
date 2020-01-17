@@ -7,12 +7,12 @@ function getExperiences() {
     })
 }
 
-
+ 
     //     .then(experiencesData => {
     //         renderexperiencesHtml(experiencesData)
     //         addexperiencesClickListeners()
     //         addEventsClickListeners()
-    //     })
+    //     }) 
 
 
 function eachExperience(json) {
@@ -29,9 +29,41 @@ function eachExperience(json) {
 
 
 // function clearExperiencesHtml() {
+
+//     // debugger 
+
 //     let experiencesIndex = document.getElementById(`${this.location_id}`)
 //     experiencesIndex.innerHTML = ''
 // }
+
+
+
+
+function getNewExperience() {     
+    const experience = {
+        name: document.getElementById('experience_name').value,
+        location_id: document.getElementById('experience_locationId').value,
+        description: document.getElementById('experience_description').value,
+        region: document.getElementById('experience_region').value,
+        image_url: document.getElementById('experience_image_url').value
+    }
+
+    fetch("http://[::1]:3000/experiences", {
+        method: 'POST',
+        body: JSON.stringify(event),
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
+    })
+    .then(resp => resp.json())
+    .then(experience => {
+
+         eachExperience(json)
+         clearLocationsHtml()
+         getLocations()
+         Location.newLocationForm()
+      });
+}
+
+
 
 
 
@@ -71,9 +103,10 @@ class Experience {
             <h3>${this.name}</h2>
             <p>Description: ${this.description}</p>
             <p>Region: ${this.region}</p>
-            <p>Image: ${this.image_url}</p>
+            <img src="${this.image_url}" class="image-url"/>
 
-       `
+         `
+
         // Add button line below to above as the last line before back tick closure:
         // <button data-id="${this.id}" class="delete">Delete</button>
 
@@ -87,42 +120,12 @@ class Experience {
 
     }
 
+
     
-
-
-    // static newExperienceForm(){
-
-    //     const newExperienceForm = document.querySelector('.add-experience-form');
-    //     newExperienceForm.addEventListener("submit", function(event){
-    //     event.preventDefault() 
-    
-    //     let nameInput = this.name.value 
-    //     let descriptionInput = this.description.value 
-    //     let regionInput = this.region.value
-    //     let image_urlInput = this.image_url.value 
-       
-    //     fetch("http://[::1]:3000/experiences", {
-    //       method: 'POST',
-    //       headers: {
-    //         'Content-Type': 'application/json'
-    //       },
-    //       body: JSON.stringify({
-    //         name: `${nameInput}`,
-    //         description: `${descriptionInput}`,
-    //         region: `${regionInput}`,
-    //         image_url: `${image_urlInput}`
-    //       })
-    //     }).then(resp => resp.json())
-    //       .then(data => {
-    //         clearExperiencesHtml()
-    //         getLocations()
-    //         // Experience.newExperienceForm()
-    //      });
-    //  })
-    //   }
-
 
 }
+
+
 
 
 // this:

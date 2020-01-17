@@ -2,21 +2,21 @@ function getLocations() {
   fetch('http://[::1]:3000/locations')
   .then(resp => resp.json())
   .then(json => {
-      eachLocation(json)
-      getExperiences()
+    eachLocation(json)
+    getExperiences()
   })
 } 
-
+ 
 
 function eachLocation(json) {
 
   let locationsData = json["data"] 
 
-      locationsData.forEach( location => {
-                  const id = location.id 
-                  const { name, description, travel_season } = location.attributes
-                  new Location(id, name, description, travel_season)
-      })
+  locationsData.forEach( location => {
+    const id = location.id 
+    const { name, description, travel_season } = location.attributes
+    new Location(id, name, description, travel_season)
+  })
 }
 
 
@@ -47,8 +47,13 @@ function renderNewExperienceForm(locationCard, current) {
       <button data-id="back" class="back" >Back</button>
       </form>`
 
+    addListenersToNewForm()
+}
 
-  const newExperienceForm = document.querySelector('.add-experience-form')      
+  
+function addListenersToNewForm() {
+  const newExperienceForm = document.querySelector('.add-experience-form')
+
   newExperienceForm.addEventListener("submit", function(event){
   event.preventDefault()
     if (!this.experience_name.value) {
@@ -67,60 +72,59 @@ function renderNewExperienceForm(locationCard, current) {
       console.log('this is back')
       // remove above console log when done 
       }
-    })
+  })
+}
 
-  }
 
+function renderNewExperienceInfo(newExperienceInfo) {
 
-  function renderNewExperienceInfo(newExperienceInfo) {
-
-    let nameInput = newExperienceInfo.experience_name.value 
-    let descriptionInput = newExperienceInfo.experience_description.value 
-    let regionInput = newExperienceInfo.experience_region.value
-    let imageUrlInput = newExperienceInfo.experience_image_url.value
-    let experienceLocationId = newExperienceInfo.experience_locationId.value
+  let nameInput = newExperienceInfo.experience_name.value 
+  let descriptionInput = newExperienceInfo.experience_description.value 
+  let regionInput = newExperienceInfo.experience_region.value
+  let imageUrlInput = newExperienceInfo.experience_image_url.value
+  let experienceLocationId = newExperienceInfo.experience_locationId.value
            
-    fetch("http://[::1]:3000/experiences", {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-          },
-      body: JSON.stringify({
-          name: `${nameInput}`,
-          description: `${descriptionInput}`,
-          region: `${regionInput}`,
-          image_url: `${imageUrlInput}`,
-          location_id: `${experienceLocationId}`
-          })
+  fetch("http://[::1]:3000/experiences", {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+        },
+    body: JSON.stringify({
+        name: `${nameInput}`,
+        description: `${descriptionInput}`,
+        region: `${regionInput}`,
+        image_url: `${imageUrlInput}`,
+        location_id: `${experienceLocationId}`
+        })
       }).then(resp => resp.json())
         .then(data => {
-          console.log(data)
+          // console.log(data)
 
         // remove above console log when done 
       })
-  }
+}
       
 
 
 
 class Location {
   constructor(id, name, description, travel_season){
-      this.id = id
-      this.name = name
-      this.description = description
-      this.travel_season = travel_season 
-      this.renderLocation()
+    this.id = id
+    this.name = name
+    this.description = description
+    this.travel_season = travel_season 
+    this.renderLocation()
   }
 
 
   delete(e){
-      const id = e.target.dataset.id
+    const id = e.target.dataset.id
 
-      fetch(`http://[::1]:3000/locations/${id}`,{
-          method: "DELETE",
-          headers:{
-              'Content-Type': 'application/json'
-          }
+    fetch(`http://[::1]:3000/locations/${id}`,{
+      method: "DELETE",
+      headers:{
+        'Content-Type': 'application/json'
+        }
       }).then(()=>{
           e.target.parentElement.remove()
       })
@@ -144,6 +148,11 @@ class Location {
       </br>
       </footer>
       `
+    this.addNewLocationCard(locationCard, locationContainer)
+  }
+
+
+  addNewLocationCard(locationCard, locationContainer) { 
     locationContainer.appendChild(locationCard)
     locationCard.addEventListener('click', e => {
       if (e.target.className === 'delete') {
@@ -159,23 +168,23 @@ class Location {
 
 
   static newLocationForm(){
-      const newLocationForm = document.querySelector('.add-location-form');
-      newLocationForm.addEventListener("submit", function(event){
-      event.preventDefault()
+    const newLocationForm = document.querySelector('.add-location-form');
+    newLocationForm.addEventListener("submit", function(event){
+    event.preventDefault()
 
-      let nameInput = this.name.value 
-      let descriptionInput = this.description.value 
-      let travel_seasonInput = this.travel_season.value 
+    let nameInput = this.name.value 
+    let descriptionInput = this.description.value 
+    let travel_seasonInput = this.travel_season.value 
      
-      fetch("http://[::1]:3000/locations", {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
+    fetch("http://[::1]:3000/locations", {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
         },
-        body: JSON.stringify({
-          name: `${nameInput}`,
-          description: `${descriptionInput}`,
-          travel_season: `${travel_seasonInput}`
+      body: JSON.stringify({
+        name: `${nameInput}`,
+        description: `${descriptionInput}`,
+        travel_season: `${travel_seasonInput}`
         })
       }).then(resp => resp.json())
         .then(data => {

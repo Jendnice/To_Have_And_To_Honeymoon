@@ -7,13 +7,6 @@ function getExperiences() {
     })
 }
 
- 
-    //     .then(experiencesData => {
-    //         renderexperiencesHtml(experiencesData)
-    //         addexperiencesClickListeners()
-    //         addEventsClickListeners()
-    //     })
-
 
 function eachExperience(json) {
 
@@ -26,15 +19,6 @@ function eachExperience(json) {
                     new Experience(id, location_id, name, description, region, image_url)
             })
     }
-
-
-// function clearExperiencesHtml() {
-
-//     // debugger 
-
-//     let experiencesIndex = document.getElementById(`${this.location_id}`)
-//     experiencesIndex.innerHTML = ''
-// }
 
 
 
@@ -127,31 +111,3 @@ class Experience {
 
 
 
-
-// this:
-//     Experience {id: "1", location_id: "1", name: "Falconry", description: "birds", region: "West Ireland", …}
-//     id: "1"
-//     location_id: "1"
-//     name: "Falconry"
-//     description: "birds"
-//     region: "West Ireland"
-//     image_url: "www.image.com"
-
-// Examples:
-//     this.id
-//     "1"
-//     this.location_id
-//     "1"
-//     this.name
-//     "Falconry"
-
-
-
-    // experience.attributes:
-    //     name
-    //     description
-    //     region
-    //     image_url 
-
-    // experience.id = id
-    // experience.relationships.location.data.id = location_id

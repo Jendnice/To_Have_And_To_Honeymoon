@@ -172,9 +172,10 @@ Current To Do's:
 ONCE ABOVE ALL SET:
 
 ** CLEAN UP unnecessary and unused code (all js files, index.html file)
-          1. Delete style.js file, and where it's linked into bottom of index.html, if you're not using it. 
-          2. Check images and make sure they're still working! (Images might expire after a week, so Thursday 01/23.) If so, grab the links in this file and re-do them.
-          3. Save code you want to keep elsewhere (notes, project_guidance, etc.), and delete those files.
+          1. Go through code and delete any console.logs and notes for yourself. ("test now" in index.js, "this is back" when clicking back for new experience, etc.)
+          2. Delete style.js file, and where it's linked into bottom of index.html, if you're not using it. 
+          3. Check images and make sure they're still working! (Images might expire after a week, so Thursday 01/23.) If so, grab the links in this file and re-do them.
+          4. Save code you want to keep elsewhere (notes, project_guidance, etc.), and delete those files.
 
 ** ReadMe, blog, video, etc. - see project page. 
           1. Additional blog due asap, as well.
