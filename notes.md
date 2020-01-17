@@ -149,6 +149,8 @@ Current To Do's:
         1. Break out long functions into smaller ones. (forms, etc.)
         2. Move some of the "render new experience" pieces into experience.js.
 
+** Look up what functions should be under classes and what shouldn't and update Location and Experience functions as needed.
+
 ** Styling/formatting, etc. (forms, text area, spacing, colors, fonts, etc.) See list!
       Design:
           1. Update New Location form to match New Experience form
@@ -194,5 +196,6 @@ Once project submitted and review scheduled:
     4. Read article Corinna sent you (in your Slack.)
     5. If you didn't add Update to Location and/or Experience, or Delete to Experience, make sure you know how to do these!
     5. Watch ES6 video by Cernan.
+    6. Watch video on post fetching. (Know what's happening here and try to figure out why "data" doesn't need to be read explicitly at end of both post fetch requests. Try Toy Tale video, Rails API, or any others.)
     6. Watch Rails API, debugging, and any others.
     7. Watch at least the 3.5 hours Udemy video. (Maybe the whole course?)

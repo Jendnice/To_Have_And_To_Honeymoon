@@ -1,4 +1,3 @@
-
 function getExperiences() {
     fetch('http://[::1]:3000/experiences')
     .then(resp => resp.json())
@@ -9,45 +8,14 @@ function getExperiences() {
 
 
 function eachExperience(json) {
-
     let experiencesData = json["data"]
-
-        experiencesData.forEach( experience => {
-                    const id = experience.id 
-                    const location_id = experience.relationships.location.data.id
-                    const { name, description, region, image_url } = experience.attributes
-                    new Experience(id, location_id, name, description, region, image_url)
-            })
-    }
-
-
-
-
-function getNewExperience() {     
-    const experience = {
-        name: document.getElementById('experience_name').value,
-        location_id: document.getElementById('experience_locationId').value,
-        description: document.getElementById('experience_description').value,
-        region: document.getElementById('experience_region').value,
-        image_url: document.getElementById('experience_image_url').value
-    }
-
-    fetch("http://[::1]:3000/experiences", {
-        method: 'POST',
-        body: JSON.stringify(event),
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
+    experiencesData.forEach( experience => {
+        const id = experience.id 
+        const location_id = experience.relationships.location.data.id
+        const { name, description, region, image_url } = experience.attributes
+        new Experience(id, location_id, name, description, region, image_url)
     })
-    .then(resp => resp.json())
-    .then(experience => {
-
-         eachExperience(json)
-         clearLocationsHtml()
-         getLocations()
-         Location.newLocationForm()
-      });
 }
-
-
 
 
 
@@ -77,13 +45,13 @@ class Experience {
   
     renderExperience(){
     
-         const experienceContainer = document.getElementById(`${this.location_id}`)
-         const experienceCard = document.createElement('div')
+        const experienceContainer = document.getElementById(`${this.location_id}`)
+        const experienceCard = document.createElement('div')
 
-         experienceCard.classList.add('experience-card')
-         experienceCard.classList.add("column")
-         experienceCard.id = this.id
-         experienceCard.innerHTML = `
+        experienceCard.classList.add('experience-card')
+        experienceCard.classList.add("column")
+        experienceCard.id = this.id
+        experienceCard.innerHTML = `
             <h3>${this.name}</h2>
             <p>Description: ${this.description}</p>
             <p>Region: ${this.region}</p>
@@ -95,9 +63,7 @@ class Experience {
         // <button data-id="${this.id}" class="delete">Delete</button>
 
           experienceContainer.appendChild(experienceCard)
-
     
-        
     //   experienceCard.addEventListener('click', e => {
     //       if (e.target.className === 'delete') this.delete(e)
     //   })
@@ -105,9 +71,5 @@ class Experience {
     }
 
 
-    
-
 }
-
-
 
