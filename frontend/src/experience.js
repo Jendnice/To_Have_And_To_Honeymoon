@@ -78,20 +78,21 @@ class Experience {
       <h2>${current.name}</h2>
       <p>Description: ${current.description}</p>
       <p>Travel Season: ${current.travel_season}</p>
-      <button data-id="${current.id}" class="delete">Delete</button>
+      <button data-id="${current.id}" class="delete">Delete Location</button>
             
       <form class="add-experience-form">
-      <label>Name: </label><br/>
-      <input type="text" id="experience_name"><br/>
+      <br/>
+      <input type="text" id="experience_name" placeholder="name" class="experience_form_input"><br/>
       <input type="hidden" id="experience_locationId" value="${current.id}">
-      <label>Description:   </label><br/>
-      <input type="text" id="experience_description"><br/> 
-      <label>Region:   </label><br/>
-      <input type="text" id="experience_region"><br/>  
-      <label>Image:   </label><br/>
-      <input type="text" id="experience_image_url"><br/>  
+      <br/>
+      <input type="text" id="experience_description" placeholder="description" class="experience_form_input"><br/> 
+      <br/>
+      <input type="text" id="experience_region" placeholder="region" class="experience_form_input"><br/>  
+      <br/>
+      <input type="text" id="experience_image_url" placeholder="image url" class="experience_form_input"><br/>
+      <br/> 
       <input type="submit" class="submit" value="Submit">
-      <button data-id="back" class="back" >Back</button>
+      <button data-id="back" class="back" >|&nbsp; Back</button>
       </form>`
 
     Experience.addListenersToNewForm()

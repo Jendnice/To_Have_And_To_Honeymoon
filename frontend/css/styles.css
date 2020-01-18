@@ -53,10 +53,34 @@ h3{
     margin:auto;
 }
 
+.back {
+  font-size: 25px;
+  float: center;
+  border-style: none;
+  background-color:  #92B7C7;
+  font-family: "Brush Script MT", cursive;
+  margin-right: 15px;
+}
+
+.submit {
+  font-size: 25px;
+  float: center;
+  border-style: none;
+  background-color:  #92B7C7;
+  font-family: "Brush Script MT", cursive;
+}
+
+.experience_form_input {
+  border-bottom-style: solid;
+  border-top-style: none;
+  border-color: rgb(44, 63, 54);
+  border-left-style: none;
+  background-color: #92B7C7;
+}
+
 .footer {
   margin-top: 15px;
   margin-bottom: 5px;
-  /* border-bottom-style: solid; */
   margin-left: 50px;
   margin-right: 50px
 }

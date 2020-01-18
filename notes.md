@@ -145,8 +145,6 @@ Addresses once input into pastepic:
 
 Current To Do's:
 
-** Look up what functions should be under classes and what shouldn't. Maybe they should all be since we're supposed to do class instead of functional?. Look at project specs, look online, and update Location and Experience functions as needed.
-
 ** Styling/formatting, etc. (forms, text area, spacing, colors, fonts, etc.) See list!
       Design:
           1. Update New Location form to match New Experience form
@@ -158,7 +156,7 @@ Current To Do's:
           6. --Bonus:-- Add other design pieces similar to your website (block quotes, etc.)
           7. --Bonus:-- Figure out bottom spacing issue! (Maybe move slideshow in between header and body instead of in body?) As part of this, maybe add footer at bottom and update info to hold copyright, title, etc. (Look at previous project.)
 
-** Try and debug the adding new location. When you first add in a new one, it adds three. But after that it seems fine. ?
+** Try and debug the adding new location. When you first add in a new one, it adds three. But after that it seems fine. ? (Maybe move clear HTML to opening function and remove elsewhere?)
 
 ** --Bonus-- Add in additional CRUD actions for resources. (Update for Location; Update and/or Delete for Experience.) If you do this, go back to main list above and repeat steps as needed to implement new action.
 
@@ -166,7 +164,11 @@ Current To Do's:
 
 ** --Bonus-- Maybe add alphabetize/sort to locations. Could maybe do this through serializer when Location.all is called?
 
+** Maybe look more into what functions should be under classes and what shouldn't. Maybe they should all be since we're supposed to do class instead of functional? Look at project specs, look online, and update Location and Experience functions as needed.
+
 ** Look at project specs and check everything. (JSON ES6 for fetch, etc.) Look at learning goals at bottom, too!
+
+** DRY up code! In all files. Frontend, backend, HTML, CSS - all of the above!
 
 
 ONCE ABOVE ALL SET:
