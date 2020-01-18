@@ -158,6 +158,8 @@ Current To Do's:
           6. --Bonus:-- Add other design pieces similar to your website (block quotes, etc.)
           7. --Bonus:-- Figure out bottom spacing issue! (Maybe move slideshow in between header and body instead of in body?) As part of this, maybe add footer at bottom and update info to hold copyright, title, etc. (Look at previous project.)
 
+** Try and debug the adding new location. When you first add in a new one, it adds three. But after that it seems fine. ?
+
 ** --Bonus-- Add in additional CRUD actions for resources. (Update for Location; Update and/or Delete for Experience.) If you do this, go back to main list above and repeat steps as needed to implement new action.
 
 ** --Bonus-- Add DOM color change for when button/submit/delete/add experience are pointed at by mouse. (Not clicked, but mouse scroll. See prev. lab for examples.)

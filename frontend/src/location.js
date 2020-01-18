@@ -20,11 +20,6 @@ function eachLocation(json) {
 }
 
 
-function clearLocationsHtml() {
-  let locationsIndex = document.getElementById("location-container")
-  locationsIndex.innerHTML = ''
-}
-
 
 
 class Location {
@@ -80,7 +75,8 @@ class Location {
       } else {
          if (e.target.className === 'add-experience-btn') {
               let current = this 
-              renderNewExperienceForm(locationCard, current)
+
+              Experience.renderNewExperienceForm(locationCard, current)
             }
         }
     }) 
@@ -108,11 +104,16 @@ class Location {
         })
       }).then(resp => resp.json())
         .then(data => {
-          clearLocationsHtml()
+          Location.clearLocationsHtml()
           getLocations()
           Location.newLocationForm()
        })
     })
+  }
+
+  static clearLocationsHtml() {
+    let locationsIndex = document.getElementById("location-container")
+    locationsIndex.innerHTML = ''
   }
 
 
