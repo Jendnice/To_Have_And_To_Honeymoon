@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
  
-  resources :experiences
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
-  # get '/test', to: 'application#test'
+  
 
   # resources :locations
   # resources :experiences
@@ -14,10 +13,11 @@ Rails.application.routes.draw do
 
   get '/experiences', to: 'locations#experiences'
   post '/experiences', to: 'experiences#create'
+  delete '/experiences/:id', to: 'experiences#destroy'
 
 
-  # resources :experiences, only: [:index, :show, :update, :create, :destroy]
-  # resources :locations, only: [:index, :show, :update, :create, :destroy]
+  # resources :experiences, only: [:index, :create, :destroy]
+  # resources :locations, only: [:index, :create, :destroy]
 
 end
 

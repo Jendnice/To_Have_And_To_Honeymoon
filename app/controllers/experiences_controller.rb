@@ -15,7 +15,17 @@ class ExperiencesController < ApplicationController
             render json: { message: "Sorry! Could not create new experience. Please try again." }
         end 
 
-    end 
+    end
+
+    def destroy 
+        experience = Experience.find_by(id: params[:id])
+
+        if experience
+            experience.destroy
+        else
+            render json: { message: "That experience could not be found. Please try again!" }
+        end 
+    end
 
     private
 
@@ -25,12 +35,5 @@ class ExperiencesController < ApplicationController
 
 
 end
-
-
-# def climb_params
-#     params.require(:climb).permit(:name, :grade, :description, :location_id, location_attributes: [:name])
-# end
-# 
-# climb has_many reviews, climb belongs_to location (that's what's shown above. You'll need that for experiences.)
 
 

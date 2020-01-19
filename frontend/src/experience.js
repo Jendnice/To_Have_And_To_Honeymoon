@@ -31,18 +31,18 @@ class Experience {
     this.renderExperience()
   }
   
-    // delete(e){
-    //     const id = e.target.dataset.id
+    delete(e){
+        const id = e.target.dataset.id
 
-    //     fetch(`http://[::1]:3000/experiences/${id}`,{
-    //         method: "DELETE",
-    //         headers:{
-    //             'Content-Type': 'application/json'
-    //         }
-    //     }).then(()=>{
-    //         e.target.parentElement.remove()
-    //     })
-    // }
+        fetch(`http://[::1]:3000/experiences/${id}`,{
+            method: "DELETE",
+            headers:{
+                'Content-Type': 'application/json'
+            }
+        }).then(()=>{
+            e.target.parentElement.remove()
+        })
+    }
   
   renderExperience(){
     
@@ -57,7 +57,7 @@ class Experience {
         <p><b>Description:</b> <i>${this.description}</i></p>
         <p><b>Region:</b> <i>${this.region}</i></p></br>
         <img src="${this.image_url}" class="image-url"/>
-
+        <button data-id="${this.id}" class="delete">Delete</button>
          `
 
         // Add button line below to above as the last line before back tick closure:
@@ -65,9 +65,9 @@ class Experience {
 
     experienceContainer.appendChild(experienceCard)
     
-    //   experienceCard.addEventListener('click', e => {
-    //       if (e.target.className === 'delete') this.delete(e)
-    //   })
+      experienceCard.addEventListener('click', e => {
+          if (e.target.className === 'delete') this.delete(e)
+      })
 
   }
 
