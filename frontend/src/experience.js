@@ -6,7 +6,6 @@ function getExperiences() {
     })
 }
 
-
 function eachExperience(json) {
     let experiencesData = json["data"]
     experiencesData.forEach( experience => {
@@ -16,8 +15,6 @@ function eachExperience(json) {
         new Experience(id, location_id, name, description, region, image_url)
     })
 }
-
-
 
 
 class Experience {
@@ -31,21 +28,20 @@ class Experience {
     this.renderExperience()
   }
   
-    delete(e){
-        const id = e.target.dataset.id
+  delete(e){
+    const id = e.target.dataset.id
 
-        fetch(`http://[::1]:3000/experiences/${id}`,{
-            method: "DELETE",
-            headers:{
-                'Content-Type': 'application/json'
-            }
-        }).then(()=>{
-            e.target.parentElement.remove()
-        })
-    }
+    fetch(`http://[::1]:3000/experiences/${id}`,{
+      method: "DELETE",
+      headers:{
+        'Content-Type': 'application/json'
+        }
+      }).then(()=>{
+        e.target.parentElement.remove()
+      })
+  }
   
   renderExperience(){
-    
     const experienceContainer = document.getElementById(`${this.location_id}`)
     const experienceCard = document.createElement('div')
 
@@ -59,19 +55,12 @@ class Experience {
         <img src="${this.image_url}" class="image-url"/></br>
         <button data-id="${this.id}" class="delete_experience">Delete Experience</button> 
         `
-
-        // Add button line below to above as the last line before back tick closure:
-        // <button data-id="${this.id}" class="delete">Delete</button>
-
     experienceContainer.appendChild(experienceCard)
     
       experienceCard.addEventListener('click', e => {
-          if (e.target.className === 'delete_experience') this.delete(e)
+        if (e.target.className === 'delete_experience') this.delete(e)
       })
-
   }
-
-
     
   static renderNewExperienceForm(locationCard, current) {
     locationCard.innerHTML = `
@@ -98,7 +87,6 @@ class Experience {
     Experience.addListenersToNewForm()
   }
 
-  
   static addListenersToNewForm() {
     const newExperienceForm = document.querySelector('.add-experience-form')
 
@@ -123,9 +111,7 @@ class Experience {
     })
   } 
 
-
   static renderNewExperienceInfo(newExperienceInfo) {
-
     let nameInput = newExperienceInfo.experience_name.value 
     let descriptionInput = newExperienceInfo.experience_description.value 
     let regionInput = newExperienceInfo.experience_region.value
@@ -154,4 +140,3 @@ class Experience {
  
 
 }
-

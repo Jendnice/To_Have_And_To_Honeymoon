@@ -6,7 +6,6 @@ function getLocations() {
     getExperiences()
   })
 } 
- 
 
 function eachLocation(json) {
 
@@ -20,8 +19,6 @@ function eachLocation(json) {
 }
 
 
-
-
 class Location {
   constructor(id, name, description, travel_season){
     this.id = id
@@ -30,7 +27,6 @@ class Location {
     this.travel_season = travel_season 
     this.renderLocation()
   }
-
 
   delete(e){
     const id = e.target.dataset.id
@@ -44,7 +40,6 @@ class Location {
           e.target.parentElement.remove()
       })
   }
-
 
   renderLocation(){
     const locationContainer = document.getElementById('location-container')
@@ -66,7 +61,6 @@ class Location {
     this.addNewLocationCard(locationCard, locationContainer)
   }
 
-
   addNewLocationCard(locationCard, locationContainer) { 
     locationContainer.appendChild(locationCard)
     locationCard.addEventListener('click', e => {
@@ -81,7 +75,6 @@ class Location {
         }
     }) 
   }
-
 
   static newLocationForm(){
     const newLocationForm = document.querySelector('.add-location-form');
@@ -111,12 +104,10 @@ class Location {
     })
   }
 
-
   static clearLocationsHtml() {
     let locationsIndex = document.getElementById("location-container")
     locationsIndex.innerHTML = ''
   }
-
 
 
 }
