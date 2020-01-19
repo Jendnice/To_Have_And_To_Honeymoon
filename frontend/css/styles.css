@@ -8,7 +8,9 @@
 
 h1{
     font-family: "Brush Script MT", cursive;
-    color: #415E51;
+    /* color: #415E51; */
+    /* color: rgb(14, 24, 14); */
+    color: rgb(44, 63, 54);
     font-size: 65px;
     font-weight: 300;
     display: flex;
@@ -22,7 +24,8 @@ h1{
 
 h2{
   font-family: "Brush Script MT", cursive;
-  color: rgb(44, 63, 54);
+  /* color: rgb(44, 63, 54); */
+  color: rgb(14, 24, 14);
   font-size: 45px;
   font-weight: 350;
   display: flex;
@@ -37,7 +40,8 @@ h2{
 
 h3{
   font-family: "Brush Script MT", cursive;
-  color: rgb(44, 63, 54);
+  /* color: rgb(44, 63, 54); */
+  color: rgb(14, 24, 14);
   font-size: 35px;
   font-weight: 300;
   display: flex;
@@ -57,25 +61,31 @@ h3{
   font-size: 25px;
   float: center;
   border-style: none;
-  background-color:  #92B7C7;
+  /* background-color:  #92B7C7; */
+  background-color: #3e474f;
   font-family: "Brush Script MT", cursive;
   margin-right: 15px;
+  color: rgb(13, 20, 13);
 }
 
 .submit {
   font-size: 25px;
   float: center;
   border-style: none;
-  background-color:  #92B7C7;
+  /* background-color:  #92B7C7; */
+  background-color: #3e474f;
   font-family: "Brush Script MT", cursive;
+  color: rgb(13, 20, 13);
 }
 
 .experience_form_input {
   border-bottom-style: solid;
   border-top-style: none;
-  border-color: rgb(44, 63, 54);
+  /* border-color: rgb(44, 63, 54); */
+  border-color: rgb(14, 24, 14);
   border-left-style: none;
-  background-color: #92B7C7;
+  /* background-color: #92B7C7; */
+  background-color: #3e474f;
 }
 
 .footer {
@@ -88,7 +98,8 @@ h3{
 
 h5 {
   font-family: "Brush Script MT", cursive;
-  color: rgb(44, 63, 54);
+  /* color: rgb(44, 63, 54); */
+  color: rgb(14, 24, 14);
   font-size: 35px;
   font-weight: 300;
   margin-bottom: 10px
@@ -105,7 +116,8 @@ h5 {
 .form_input{
   border-bottom-style: solid;
   border-top-style: none;
-  border-color: rgb(44, 63, 54);
+  /* border-color: rgb(44, 63, 54); */
+  border-color: rgb(14, 24, 14);
   border-left-style: none;
 }
 
@@ -113,13 +125,16 @@ h5 {
   font-size: 25px;
   float: center;
   border-style: none;
-  background-color:  #92B7C7;
+  /* background-color:  #92B7C7; */
+  background-color: #3e474f;
   font-family: "Brush Script MT", cursive;
+  color: rgb(13, 20, 13);
 }
 
 .submit_button {
   font-family: "Brush Script MT", cursive;
-  color: rgb(44, 63, 54);
+  /* color: rgb(44, 63, 54); */
+  color: rgb(14, 24, 14);
   font-size: 25px;
   font-weight: 300;
   float: center;
@@ -131,10 +146,11 @@ h5 {
   font-size: 25px;
   float: center;
   border-style: none;
-  background-color:  #92B7C7;
+  /* background-color:  #92B7C7; */
+  background-color: #3e474f;
   font-family: "Brush Script MT", cursive;
+  color: rgb(13, 20, 13);
 }
-
 
 .location-card{
     float: left;
@@ -144,8 +160,10 @@ h5 {
     width:1250px;
     /* height: 750px; */
     height: 700px;
-    background-color: #92B7C7;
+    /* background-color: #788188; */
+    /* background-color: #92B7C7; */
     /* background-color: #8EBCC0; */
+    background-color: #3e474f;
     color: black;
     margin:20px;
     text-align: center;
@@ -163,7 +181,8 @@ h5 {
     width:350px;
     height: 400px;
     background-color: white;
-    color: #000080;
+    /* color: #000080; */
+    color: rgb(14, 24, 14);
     text-align: center;
     margin-top: 0;
     margin-bottom:200px;
@@ -195,6 +214,8 @@ h5 {
   
   body {
     font-family: Arial, Helvetica, sans-serif;
+    /* font-family: "Brush Script MT", cursive; */
+    /* font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
   }
   
   /* Float four columns side by side */

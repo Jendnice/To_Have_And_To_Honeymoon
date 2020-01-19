@@ -147,11 +147,9 @@ Current To Do's:
 
 ** Styling/formatting, etc. (forms, text area, spacing, colors, fonts, etc.) See list!
       Design:
-          1. Update New Location form to match New Experience form
-          2. Maybe move New Experience form ? Could try under body and see if that helps with spacing?
-          3. Update location card color and maybe experience card color (maybe work in dark green of font or grey of slideshow scroll)
+          3. Finish updating New Location form to match New Experience form (and based on final colors)
           4. Adjust font type (especially main text)
-          5. Adjust font color (especially main text contrast with button and heading color)
+          5. Adjust font color (especially main text contrast with button and heading color). For experience cards, try updating the font by using the card itself in css.
           6. Figure out how to make location card size readjust for more than 3 cards (?)
           6. --Bonus:-- Add other design pieces similar to your website (block quotes, etc.)
           7. --Bonus:-- Figure out bottom spacing issue! (Maybe move slideshow in between header and body instead of in body?) As part of this, maybe add footer at bottom and update info to hold copyright, title, etc. (Look at previous project.)

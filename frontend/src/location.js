@@ -55,7 +55,7 @@ class Location {
     locationCard.innerHTML = `
       <h2>${this.name}</h2>
       <p><b>Description:</b> <i>${this.description}</i></p>
-      <p><b>Travel Season:</b> <i> ${this.travel_season}<i></p>
+      <p><b>Travel Season:</b> <i> ${this.travel_season}</i></p>
       <footer class="footer">
       <button data-id="${this.id}" class="delete">Delete Location</button>
       <button data-id="${this.id}" class="add-experience-btn">|&nbsp; Add Experience</button>
