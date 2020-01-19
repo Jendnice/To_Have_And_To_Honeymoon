@@ -1,5 +1,15 @@
+/* body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300; */
+    /* background-color: #f1f1f1; */
+    /* background-color: white;
+} */
+
+
 h1{
     font-family: "Brush Script MT", cursive;
+    /* color: #415E51; */
+    /* color: rgb(14, 24, 14); */
     color: rgb(44, 63, 54);
     font-size: 65px;
     font-weight: 300;
@@ -14,6 +24,7 @@ h1{
 
 h2{
   font-family: "Brush Script MT", cursive;
+  /* color: rgb(44, 63, 54); */
   color: rgb(14, 24, 14);
   font-size: 45px;
   font-weight: 350;
@@ -29,6 +40,7 @@ h2{
 
 h3{
   font-family: "Brush Script MT", cursive;
+  /* color: rgb(44, 63, 54); */
   color: rgb(14, 24, 14);
   font-size: 35px;
   font-weight: 300;
@@ -50,6 +62,7 @@ h3{
   font-size: 25px;
   float: center;
   border-style: none;
+  /* background-color:  #92B7C7; */
   background-color: #3e474f;
   font-family: "Brush Script MT", cursive;
   margin-right: 15px;
@@ -62,6 +75,7 @@ h3{
   font-size: 25px;
   float: center;
   border-style: none;
+  /* background-color:  #92B7C7; */
   background-color: #3e474f;
   font-family: "Brush Script MT", cursive;
   color: rgb(13, 20, 13);
@@ -72,8 +86,10 @@ h3{
 .experience_form_input {
   border-bottom-style: solid;
   border-top-style: none;
+  /* border-color: rgb(44, 63, 54); */
   border-color: rgb(14, 24, 14);
   border-left-style: none;
+  /* background-color: #92B7C7; */
   background-color: #3e474f;
 }
 
@@ -84,14 +100,17 @@ h3{
   margin-right: 50px
 }
 
+
 h5 {
   font-family: "Brush Script MT", cursive;
+  /* color: rgb(44, 63, 54); */
   color: rgb(14, 24, 14);
   font-size: 35px;
   font-weight: 300;
   margin-bottom: 10px
 }
 
+/* below is responsible for New Location form at top */
 #form{
     display: flex;
     flex-direction: column;
@@ -102,6 +121,7 @@ h5 {
 .form_input{
   border-bottom-style: solid;
   border-top-style: none;
+  /* border-color: rgb(44, 63, 54); */
   border-color: rgb(14, 24, 14);
   border-left-style: none;
 }
@@ -110,6 +130,7 @@ h5 {
   font-size: 25px;
   float: center;
   border-style: none;
+  /* background-color:  #92B7C7; */
   background-color: #3e474f;
   font-family: "Brush Script MT", cursive;
   color: rgb(13, 20, 13);
@@ -118,6 +139,7 @@ h5 {
 
 .submit_button {
   font-family: "Brush Script MT", cursive;
+  /* color: rgb(44, 63, 54); */
   color: rgb(14, 24, 14);
   font-size: 25px;
   font-weight: 300;
@@ -131,6 +153,7 @@ h5 {
   font-size: 25px;
   float: center;
   border-style: none;
+  /* background-color:  #92B7C7; */
   background-color: #3e474f;
   font-family: "Brush Script MT", cursive;
   color: rgb(13, 20, 13);
@@ -141,6 +164,7 @@ h5 {
   font-size: 25px;
   float: center;
   border-style: none;
+  /* background-color:  #92B7C7; */
   background-color: white;
   font-family: "Brush Script MT", cursive;
   color: rgb(14, 24, 14);
@@ -155,11 +179,19 @@ h5 {
     border-color: #35353C;
     border-width: 2px;
     width:1250px;
+    /* height: 750px; */
+
+    /* height: 700px; */
+
+    /* background-color: #788188; */
+    /* background-color: #92B7C7; */
+    /* background-color: #8EBCC0; */
     background-color: #3e474f;
     color: black;
     margin:20px;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
     min-height: 100px;
     overflow: hidden;
 }
@@ -175,52 +207,74 @@ h5 {
     width:350px;
     height: 440px;
     background-color: white;
+    /* color: #000080; */
     color: rgb(14, 24, 14);
+    /* color: rgb(44, 63, 54); */
+    /* font-style: normal; */
+    /* font-weight: bold; */
     text-align: center;
     margin-top: 20px;
     margin-bottom: 70px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin-left: 45px;
     margin-right: 25px;
+    /* padding: 16px; */
+
+    /* min-height: 100px; */
+    /* overflow: hidden; */
 }
 
+/* .experience-card{
+  padding: 16px;
+  text-align: center; */
+  /* background-color: #f1f1f1; */
+/* } */
+
+/* .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  } */
+
 .center-text {
-  text-align: center;
+    text-align: center;
 }
 
 * {
-  box-sizing: border-box;
-}
-  
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-  
-/* Float four columns side by side */
-.column {
-  float: left;
-  width: 27%;
-  padding: 0 10px;
-}
-  
-/* Remove extra left and right margins, due to padding in columns */
-.row {margin: 0 -5px;}
-  
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-  
-/* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
+    box-sizing: border-box;
   }
-}
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: "Brush Script MT", cursive; */
+    /* font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 27%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
 
 
 /*  Full-width click through slideshow: */
@@ -321,6 +375,7 @@ html, body {
   transform: translateY(0);
   transition: all 0.5s 0.5s;
 }
+
 
 .dot {
   cursor: pointer;

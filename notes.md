@@ -158,6 +158,8 @@ Current To Do's:
 
 ** DRY up code! In all files. Frontend, backend, HTML, CSS - all of the above!
 
+** Check on two body sections in css and condense/adjust if/as possible.
+
 ** Update and finalize seed data that's in there. (Greece pics, etc.)
 
 ONCE ABOVE ALL SET:
@@ -181,7 +183,7 @@ Once project submitted and review scheduled:
 ** Prepare for project review.
     1. Review everything on project page list.
     2. Review everything Corinna told you (in mini notebook).
-    3. Know every line of code - what it does and how it works. (HTML and CSS, too! Make sure you understand your slideshow pieces.)
+    3. Know every line of code - what it does and how it works. (HTML and CSS, too! Make sure you understand your slideshow pieces.) Delete notes/comments that are in CSS file afterwards if appropriate.
     4. Read article Corinna sent you (in your Slack.)
     5. If you didn't add Update to Location and/or Experience, or Delete to Experience, make sure you know how to do these!
     5. Watch ES6 video by Cernan.
