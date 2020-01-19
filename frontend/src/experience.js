@@ -103,10 +103,7 @@ class Experience {
     })
 
     newExperienceForm.addEventListener('click', e => {
-      if (e.target.className === 'back') {
-
-      console.log('this is back')
-      // remove above console log when done 
+      if (e.target.className === 'back') { 
       }
     })
   } 
@@ -131,10 +128,7 @@ class Experience {
         location_id: `${experienceLocationId}`
         })
       }).then(resp => resp.json())
-        .then(data => {
-          // console.log(data)
-
-        // remove above console log when done 
+        .then(data => { 
       })
   }
  
