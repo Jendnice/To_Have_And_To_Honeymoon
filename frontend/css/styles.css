@@ -1,4 +1,4 @@
-h1{
+h1 {
     font-family: "Brush Script MT", cursive;
     color: rgb(44, 63, 54);
     font-size: 65px;
@@ -12,7 +12,7 @@ h1{
     margin-right: 50px;
 }
 
-h2{
+h2 {
   font-family: "Brush Script MT", cursive;
   color: rgb(14, 24, 14);
   font-size: 45px;
@@ -27,7 +27,7 @@ h2{
   margin-top: 15px;
 }
 
-h3{
+h3 {
   font-family: "Brush Script MT", cursive;
   color: rgb(14, 24, 14);
   font-size: 35px;
@@ -92,21 +92,21 @@ h5 {
   margin-bottom: 10px
 }
 
-#form{
+#form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
 
-.form_input{
+.form_input {
   border-bottom-style: solid;
   border-top-style: none;
   border-color: rgb(14, 24, 14);
   border-left-style: none;
 }
 
-.add-experience-btn{
+.add-experience-btn {
   font-size: 25px;
   float: center;
   border-style: none;
@@ -127,7 +127,7 @@ h5 {
   cursor: pointer;
 }
 
-.delete{
+.delete {
   font-size: 25px;
   float: center;
   border-style: none;
@@ -137,7 +137,7 @@ h5 {
   cursor: pointer;
 }
 
-.delete_experience{
+.delete_experience {
   font-size: 25px;
   float: center;
   border-style: none;
@@ -149,7 +149,7 @@ h5 {
   cursor: pointer;
 }
 
-.location-card{
+.location-card {
     float: left;
     border-style: groove;
     border-color: #35353C;
@@ -170,7 +170,7 @@ h5 {
   width: auto;
 }
 
-.experience-card{
+.experience-card {
     float: center;
     width:350px;
     height: 440px;
@@ -190,10 +190,6 @@ h5 {
 
 * {
   box-sizing: border-box;
-}
-  
-body {
-  font-family: Arial, Helvetica, sans-serif;
 }
   
 /* Float four columns side by side */
@@ -230,6 +226,7 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
   
 .wrap {

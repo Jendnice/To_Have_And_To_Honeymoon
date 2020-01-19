@@ -156,10 +156,6 @@ Future features:
 
 Current To Do's:
 
-** DRY up code! In all files. Frontend, backend, HTML, CSS - all of the above!
-
-** Check on two body sections in css and condense/adjust if/as possible.
-
 ** Update and finalize seed data that's in there. (Greece pics, etc.)
 
 ONCE ABOVE ALL SET:
