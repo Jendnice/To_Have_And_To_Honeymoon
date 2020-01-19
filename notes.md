@@ -139,11 +139,9 @@ Addresses once input into pastepic:
 
 
 
+Future features:
 
-
-
-
-Current To Do's:
+** --Bonus-- Add remaining CRUD actions to both resources. (Update for both.)
 
 ** --Bonus-- Add DOM color change for when button/submit/delete/add experience are pointed at by mouse. (Not clicked, but mouse scroll. See prev. lab for examples.)
 
@@ -153,9 +151,10 @@ Current To Do's:
 
 ** --Bonus-- Try and debug the adding new location. When you first add in a new one, it adds three. But after that it seems fine. ? (Maybe move clear HTML to opening function and remove elsewhere?)
 
-** Maybe look more into what functions should be under classes and what shouldn't. Maybe they should all be since we're supposed to do class instead of functional? Look at project specs, look online, and update Location and Experience functions as needed.
 
-** Look at project specs and check everything. (JSON ES6 for fetch, etc.) Look at learning goals at bottom, too!
+
+
+Current To Do's:
 
 ** DRY up code! In all files. Frontend, backend, HTML, CSS - all of the above!
 
@@ -189,3 +188,5 @@ Once project submitted and review scheduled:
     6. Watch video on post fetching. (Know what's happening here and try to figure out why "data" doesn't need to be read explicitly at end of both post fetch requests. Try Toy Tale video, Rails API, or any others.)
     6. Watch Rails API, debugging, and any others.
     7. Watch at least the 3.5 hours Udemy video. (Maybe the whole course?)
+    8. Maybe look more into what functions should be under classes and what shouldn't.
+    9. Re-review project specs and check everything. (JSON ES6 for fetch, etc.) Look at learning goals at bottom, too!
