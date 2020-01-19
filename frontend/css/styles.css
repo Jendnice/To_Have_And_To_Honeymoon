@@ -155,6 +155,18 @@ h5 {
   color: rgb(13, 20, 13);
 }
 
+.delete_experience{
+  font-size: 25px;
+  float: center;
+  border-style: none;
+  /* background-color:  #92B7C7; */
+  background-color: white;
+  font-family: "Brush Script MT", cursive;
+  color: rgb(14, 24, 14);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 .location-card{
     float: left;
     border-style: groove;
@@ -187,7 +199,7 @@ h5 {
 .experience-card{
     float: center;
     width:350px;
-    height: 400px;
+    height: 440px;
     background-color: white;
     /* color: #000080; */
     color: rgb(14, 24, 14);
@@ -201,6 +213,9 @@ h5 {
     margin-left: 45px;
     margin-right: 25px;
     /* padding: 16px; */
+
+    /* min-height: 100px; */
+    /* overflow: hidden; */
 }
 
 /* .experience-card{

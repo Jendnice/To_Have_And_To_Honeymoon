@@ -56,9 +56,9 @@ class Experience {
         <h3>${this.name}</h2>
         <p><b>Description:</b> <i>${this.description}</i></p>
         <p><b>Region:</b> <i>${this.region}</i></p></br>
-        <img src="${this.image_url}" class="image-url"/>
-        <button data-id="${this.id}" class="delete">Delete</button>
-         `
+        <img src="${this.image_url}" class="image-url"/></br>
+        <button data-id="${this.id}" class="delete_experience">Delete Experience</button> 
+        `
 
         // Add button line below to above as the last line before back tick closure:
         // <button data-id="${this.id}" class="delete">Delete</button>
@@ -66,7 +66,7 @@ class Experience {
     experienceContainer.appendChild(experienceCard)
     
       experienceCard.addEventListener('click', e => {
-          if (e.target.className === 'delete') this.delete(e)
+          if (e.target.className === 'delete_experience') this.delete(e)
       })
 
   }

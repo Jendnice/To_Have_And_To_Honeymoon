@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   post '/locations', to: 'locations#create'
   delete '/locations/:id', to: 'locations#destroy'
 
-  get '/experiences', to: 'locations#experiences'
+  get '/experiences', to: 'experiences#index'
   post '/experiences', to: 'experiences#create'
   delete '/experiences/:id', to: 'experiences#destroy'
 

@@ -161,6 +161,7 @@ Current To Do's:
 
 ** DRY up code! In all files. Frontend, backend, HTML, CSS - all of the above!
 
+** Update and finalize seed data that's in there. (Greece pics, etc.)
 
 ONCE ABOVE ALL SET:
 
