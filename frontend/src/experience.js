@@ -54,8 +54,8 @@ class Experience {
     experienceCard.id = this.id
     experienceCard.innerHTML = `
         <h3>${this.name}</h2>
-        <p>Description: ${this.description}</p>
-        <p>Region: ${this.region}</p>
+        <p><b>Description:</b> <i>${this.description}</i></p>
+        <p><b>Region:</b> <i>${this.region}</i></p></br>
         <img src="${this.image_url}" class="image-url"/>
 
          `

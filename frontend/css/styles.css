@@ -49,6 +49,7 @@ h3{
   justify-content: center;
   text-align: center;
   margin-top: 15px;
+  margin-bottom: 25px;
   border-bottom-style: solid;
 }
 
@@ -183,6 +184,9 @@ h5 {
     background-color: white;
     /* color: #000080; */
     color: rgb(14, 24, 14);
+    /* color: rgb(44, 63, 54); */
+    /* font-style: normal; */
+    /* font-weight: bold; */
     text-align: center;
     margin-top: 0;
     margin-bottom:200px;
