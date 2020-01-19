@@ -5,22 +5,16 @@ class LocationsController < ApplicationController
         render json: LocationSerializer.new(locations)
     end 
 
-    # def show
-    #     location = Location.find(params[:id])
-    #     render json: LocationSerializer.new(location)
-    # end
-
     def create 
         location = Location.create(location_params)
 
-        # if new_location
         if location
             render json: LocationSerializer.new(location)
         else 
             render json: { message: "Sorry! Could not create new location. Please try again." }
         end 
 
-    end 
+    end  
 
     def destroy 
         location = Location.find_by(id: params[:id])
@@ -32,13 +26,6 @@ class LocationsController < ApplicationController
         end 
     end 
 
-    # def destroy
-    #     location = Location.find_by(id: params[:id])
-    #     location.destroy
-    #     render json: location
-    # end
-
-
     private
 
     def location_params
@@ -47,11 +34,5 @@ class LocationsController < ApplicationController
 
 end
 
-
-# def climb_params
-#     params.require(:climb).permit(:name, :grade, :description, :location_id, location_attributes: [:name])
-# end
-# 
-# climb has_many reviews, climb belongs_to location (that's what's shown above. You'll need that for experiences.)
 
 

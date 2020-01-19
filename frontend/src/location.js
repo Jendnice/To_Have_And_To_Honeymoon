@@ -111,6 +111,7 @@ class Location {
     })
   }
 
+
   static clearLocationsHtml() {
     let locationsIndex = document.getElementById("location-container")
     locationsIndex.innerHTML = ''
