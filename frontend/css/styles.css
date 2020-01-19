@@ -68,6 +68,7 @@ h3{
   margin-right: 15px;
   color: rgb(13, 20, 13);
   margin-bottom: 40px;
+  cursor: pointer;
 }
 
 .submit {
@@ -79,6 +80,7 @@ h3{
   font-family: "Brush Script MT", cursive;
   color: rgb(13, 20, 13);
   margin-bottom: 40px;
+  cursor: pointer;
 }
 
 .experience_form_input {
@@ -132,6 +134,7 @@ h5 {
   background-color: #3e474f;
   font-family: "Brush Script MT", cursive;
   color: rgb(13, 20, 13);
+  cursor: pointer;
 }
 
 .submit_button {
@@ -143,6 +146,7 @@ h5 {
   float: center;
   border-style: none;
   background-color: white;
+  cursor: pointer;
 }
 
 .delete{
@@ -153,6 +157,7 @@ h5 {
   background-color: #3e474f;
   font-family: "Brush Script MT", cursive;
   color: rgb(13, 20, 13);
+  cursor: pointer;
 }
 
 .delete_experience{
@@ -165,6 +170,7 @@ h5 {
   color: rgb(14, 24, 14);
   margin-top: 15px;
   margin-bottom: 15px;
+  cursor: pointer;
 }
 
 .location-card{

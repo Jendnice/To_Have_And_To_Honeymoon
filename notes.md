@@ -145,8 +145,6 @@ Addresses once input into pastepic:
 
 Current To Do's:
 
-** --Bonus-- Add in additional CRUD actions for resources. (Update for Location; Update and/or Delete for Experience.) If you do this, go back to main list above and repeat steps as needed to implement new action.
-
 ** --Bonus-- Add DOM color change for when button/submit/delete/add experience are pointed at by mouse. (Not clicked, but mouse scroll. See prev. lab for examples.)
 
 ** --Bonus-- Maybe add alphabetize/sort to locations. Could maybe do this through serializer when Location.all is called?
