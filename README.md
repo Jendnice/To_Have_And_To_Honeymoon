@@ -25,7 +25,7 @@ Then run the backend (Rails API) in a local server:
 $ rails server
 
 ```
-Finally, navigate to the frontend folder and open the index.html file in the browser of your choice.
+Finally, navigate to the _frontend_ folder and open the index.html file in the browser of your choice.
 
 Have fun and happy honeymooning!
 
@@ -37,7 +37,7 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/Jendni
 
 This is a portfolio project for the Javascript section of Flatiron School's Online Software Engineering program.
 For more information, see the
-[Rails Assessment Lesson for Flatiron](https://github.com/learn-co-students/js-spa-project-instructions-online-web-ft-090919).
+[JS SPA Project Instructions for Flatiron](https://github.com/learn-co-students/js-spa-project-instructions-online-web-ft-090919).
 
 ## License
 
