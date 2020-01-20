@@ -157,14 +157,19 @@ Future features:
 
 CURRENT TO DO'S:
 
-** Blog, video, etc. - see project page. 
-          1. Additional blog due asap, as well.
+** Edit, finalize, and publish blog
+
+** Video
+
+** Etc. - see project page. 
 
 ** Update notes file and move elsewhere. (Slack, Wordpad, etc.)
 
 ** Submit project
 
 ** Schedule PR review. (And crush it!) :)
+
+  1. Additional blog due asap, as well.
 
 
 Once project submitted and review scheduled:
