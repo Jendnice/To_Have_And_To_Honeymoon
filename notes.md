@@ -157,11 +157,10 @@ Future features:
 
 CURRENT TO DO'S:
 
-** CLEAN UP unnecessary and unused code (all js files, index.html file)
-          4. Save code you want to keep elsewhere (notes, project_guidance, etc.), and delete those files.
-
 ** ReadMe, blog, video, etc. - see project page. 
           1. Additional blog due asap, as well.
+
+** Update notes file and move elsewhere. (Slack, Wordpad, etc.)
 
 ** Submit project
 
