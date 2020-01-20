@@ -87,7 +87,7 @@ image_url -- string
 Current CRUD actions:
 
   Location - create, read, delete
-  Experience - create, read 
+  Experience - create, read, delete
 
 
 
@@ -111,7 +111,7 @@ Northern lights:
 
 Slideshow image addresses:
 
-Original image addresses:
+     Original image addresses:
 
 https://cdn.wallpapersafari.com/72/53/kDQegb.jpg
 
@@ -124,7 +124,7 @@ https://b.kisscc0.com/20180517/vhe/kisscc0-ultra-high-definition-television-4k-r
 http://2.bp.blogspot.com/-D0W02d8rpwU/UUhvMJ8AriI/AAAAAAAAjYc/s-zQHKhlrtQ/s1600/Travel++HD+wallpapers+(10).jpg
 
 
-Addresses once input into pastepic:
+      (Old) Addresses once input into pastepic:
 
 "https://www.pastepic.xyz/images/2020/01/16/TravelHDwallpapers130700d7a5c9a5154e.jpg"
 
@@ -135,6 +135,25 @@ Addresses once input into pastepic:
 "https://farm4.staticflickr.com/3927/33620928972_4f03e1f608_k.jpg"
 
 "https://www.pastepic.xyz/images/2020/01/16/TravelHDwallpapers10e035eda46eb87650.jpg"
+
+
+
+FINAL ADDRESSES ONCE INPUT TO PASTEPIC:
+
+ireland castle:  "https://www.pastepic.xyz/images/2020/01/20/kDQegbb9e3a01400a4e5b7.jpg"
+
+hammock:   "https://www.pastepic.xyz/images/2020/01/20/TravelHDwallpapers13d279ff24cb5d875e.jpg"
+
+lighthouse:  "https://www.pastepic.xyz/images/2020/01/20/kisscc0-ultra-high-definition-television-4k-resolution-des-travel-5afd944adf4c84.631782871526568010914700b8a9793294bd6b.jpg"
+
+(One from Momentum background - safari)
+
+Asian village on water:  "https://www.pastepic.xyz/images/2020/01/20/TravelHDwallpapers10357a5dfae35973c7.jpg"
+
+
+
+
+
 
 
 
@@ -157,11 +176,10 @@ Future features:
 
 CURRENT TO DO'S:
 
-** Edit, finalize, and publish blog
+Blog: https://jendnice.github.io/my_new_vertical_world
 
-** Video
+Video: https://youtu.be/D-TKmUnU8ss
 
-** Etc. - see project page. 
 
 ** Update notes file and move elsewhere. (Slack, Wordpad, etc.)
 
