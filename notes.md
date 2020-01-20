@@ -157,7 +157,7 @@ Future features:
 
 CURRENT TO DO'S:
 
-** ReadMe, blog, video, etc. - see project page. 
+** Blog, video, etc. - see project page. 
           1. Additional blog due asap, as well.
 
 ** Update notes file and move elsewhere. (Slack, Wordpad, etc.)
