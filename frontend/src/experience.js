@@ -95,7 +95,7 @@ class Experience {
       if (!this.experience_name.value) {
         Location.clearLocationsHtml()
         getLocations()
-        Location.newLocationForm()
+        // Location.newLocationForm()
       } else {
           let newExperienceInfo = this 
           Experience.renderNewExperienceInfo(newExperienceInfo)

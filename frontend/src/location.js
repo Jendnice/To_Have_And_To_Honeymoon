@@ -99,7 +99,7 @@ class Location {
         .then(data => {
           Location.clearLocationsHtml()
           getLocations()
-          Location.newLocationForm()
+          // Location.newLocationForm()
        })
     })
   }
